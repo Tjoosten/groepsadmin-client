@@ -87,6 +87,7 @@
 <script type="text/javascript" src="Extra%20gegevens_bestanden/jquery_003.js"></script>
 <script type="text/javascript" src="Extra%20gegevens_bestanden/jquery_002.js"></script>
 <script src="Extra%20gegevens_bestanden/globale_menubalk.js" charset="utf-8" type="text/javascript"></script>
+<script src="js/bootstrap/tab.js" type="text/javascript"></script>
 
 <script>
     // Zorg ervoor dat jQuery de standaard-waarde van '$' niet meer overschrijft.
@@ -180,8 +181,28 @@ de message-id wordt in een hieronderaangeduidde href-met-wiki-link achter het be
 
      <div class="tab_page" style="overflow: auto;">
 
-
-    <form name="GroepseigenGegevensInstantiesForm" method="post" action="/groepsadmin/zet-individuele-steekkaart-gegevens-instanties.do">
+       <nav class="col-xs-4">
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="#20153110390" data-toggle="pill">Leden &amp; leiding</a></li>
+          <li><a href="#GAVeld_2015330_1559_16" data-toggle="pill">Organisatie</a></li>
+          <li><a href="#GAVeld_2015331_107_44" data-toggle="pill">Lokalen</a></li>
+          <li><a href="#GAVeld_2015331_1012_18" data-toggle="pill">Lokalenvisum</a></li>
+          <li><a href="#GAVeld_2015311_2118_16" data-toggle="pill">Eigenaar en contract lokalen</a></li>
+          <li><a href="#GAVeld_2015331_1314_3" data-toggle="pill">Eigenaar en contract grond</a></li>
+          <li><a href="#GAVeld_2015331_1334_51" data-toggle="pill">Vorming</a></li>
+          <li><a href="#GAVeld_2015331_1343_30" data-toggle="pill">Netwerk/omgeving</a></li>
+          <li><a href="#GAVeld_2015331_1356_12" data-toggle="pill">Communicatie</a></li>
+          <li><a href="#GAVeld_2015331_1411_47" data-toggle="pill">Extra opvolging</a></li>
+          <li><a href="#GAVeld_2015331_1416_25" data-toggle="pill">Kamp en weekend</a></li>
+          <li><a href="#GAVeld_2015331_1417_31" data-toggle="pill">Kampvisum ondertekend</a></li>
+          <li><a href="#GAVeld_2015331_1438_54" data-toggle="pill">Kamp</a></li>
+          <li><a href="#GAVeld_2015331_1450_3" data-toggle="pill">Aanbod</a></li>
+          <li><a href="#GAVeld_2015331_1458_43" data-toggle="pill">Weetjes</a></li>
+        </ul>
+       </nav>
+    
+       
+       <form class="tab-content col-xs-8" name="GroepseigenGegevensInstantiesForm" method="post" action="/groepsadmin/zet-individuele-steekkaart-gegevens-instanties.do">
     <input name="_id" value="d5f75b320b812440010b812b29e9717b" type="hidden">
 
 
@@ -195,7 +216,7 @@ de message-id wordt in een hieronderaangeduidde href-met-wiki-link achter het be
 
 
 
-                <fieldset id="20153110390" class="article ledenleiding">
+                <fieldset id="20153110390" class="article ledenleiding tab-pane active">
                     <legend>LEDEN &amp; LEIDING</legend>
 
                     
@@ -432,7 +453,7 @@ de message-id wordt in een hieronderaangeduidde href-met-wiki-link achter het be
                     
                     </fieldset>
 
-                <fieldset id="GAVeld_2015330_1559_16" class="article organisatie">
+                <fieldset id="GAVeld_2015330_1559_16" class="article organisatie tab-pane">
                     <legend>ORGANISATIE</legend>
 
                     
@@ -895,7 +916,7 @@ de message-id wordt in een hieronderaangeduidde href-met-wiki-link achter het be
                     
                     </fieldset>
 
-                <fieldset id="GAVeld_2015331_107_44" class="article lokalen">
+                <fieldset id="GAVeld_2015331_107_44" class="article lokalen tab-pane">
                     <legend>LOKALEN</legend>
 
                     
@@ -906,7 +927,7 @@ de message-id wordt in een hieronderaangeduidde href-met-wiki-link achter het be
                     
                     </fieldset>
 
-                <fieldset id="GAVeld_2015331_1012_18" class="article lokalenvisum">
+                <fieldset id="GAVeld_2015331_1012_18" class="article lokalenvisum tab-pane">
                     <legend>Lokalenvisum</legend>
 
                     
@@ -1057,7 +1078,7 @@ de message-id wordt in een hieronderaangeduidde href-met-wiki-link achter het be
                     
                     </fieldset>
 
-                <fieldset id="GAVeld_2015311_2118_16" class="article eigenaarencontractlokalen">
+                <fieldset id="GAVeld_2015311_2118_16" class="article eigenaarencontractlokalen tab-pane">
                     <legend>Eigenaar en contract lokalen</legend>
 
                     
@@ -1215,7 +1236,7 @@ de message-id wordt in een hieronderaangeduidde href-met-wiki-link achter het be
                     
                     </fieldset>
 
-                <fieldset id="GAVeld_2015331_1314_3" class="article eigenaarencontractgrond">
+                <fieldset id="GAVeld_2015331_1314_3" class="article eigenaarencontractgrond tab-pane">
                     <legend>Eigenaar en contract grond</legend>
 
                     
@@ -1461,7 +1482,7 @@ de message-id wordt in een hieronderaangeduidde href-met-wiki-link achter het be
                     
                     </fieldset>
 
-                <fieldset id="GAVeld_2015331_1334_51" class="article vorming">
+                <fieldset id="GAVeld_2015331_1334_51" class="article vorming tab-pane">
                     <legend>VORMING</legend>
 
                     
@@ -1548,7 +1569,7 @@ de message-id wordt in een hieronderaangeduidde href-met-wiki-link achter het be
                     
                     </fieldset>
 
-                <fieldset id="GAVeld_2015331_1343_30" class="article netwerkomgeving">
+                <fieldset id="GAVeld_2015331_1343_30" class="article netwerkomgeving tab-pane">
                     <legend>NETWERK / OMGEVING</legend>
 
                     
@@ -1723,7 +1744,7 @@ de message-id wordt in een hieronderaangeduidde href-met-wiki-link achter het be
                     
                     </fieldset>
 
-                <fieldset id="GAVeld_2015331_1356_12" class="article communicatie">
+                <fieldset id="GAVeld_2015331_1356_12" class="article communicatie tab-pane">
                     <legend>COMMUNICATIE</legend>
 
                     
@@ -1872,7 +1893,7 @@ de message-id wordt in een hieronderaangeduidde href-met-wiki-link achter het be
                     
                     </fieldset>
 
-                <fieldset id="GAVeld_2015331_1411_47" class="article extraopvolging">
+                <fieldset id="GAVeld_2015331_1411_47" class="article extraopvolging tab-pane">
                     <legend>EXTRA OPVOLGING</legend>
 
                     
@@ -1912,7 +1933,7 @@ de message-id wordt in een hieronderaangeduidde href-met-wiki-link achter het be
                     
                     </fieldset>
 
-                <fieldset id="GAVeld_2015331_1416_25" class="article kampenweekend">
+                <fieldset id="GAVeld_2015331_1416_25" class="article kampenweekend tab-pane tab-pane">
                     <legend>KAMP EN WEEKEND</legend>
 
                     
@@ -1923,7 +1944,7 @@ de message-id wordt in een hieronderaangeduidde href-met-wiki-link achter het be
                     
                     </fieldset>
 
-                <fieldset id="GAVeld_2015331_1417_31" class="article kampvisumondertekend">
+                <fieldset id="GAVeld_2015331_1417_31" class="article kampvisumondertekend tab-pane">
                     <legend>Kampvisum ondertekend?</legend>
 
                     
@@ -2315,7 +2336,7 @@ de message-id wordt in een hieronderaangeduidde href-met-wiki-link achter het be
                     
                     </fieldset>
 
-                <fieldset id="GAVeld_2015331_1438_54" class="article kamp">
+                <fieldset id="GAVeld_2015331_1438_54" class="article kamp tab-pane">
                     <legend>Kamp</legend>
 
                     
@@ -2531,7 +2552,7 @@ de message-id wordt in een hieronderaangeduidde href-met-wiki-link achter het be
                     
                     </fieldset>
 
-                <fieldset id="GAVeld_2015331_1450_3" class="article aanbod">
+                <fieldset id="GAVeld_2015331_1450_3" class="article aanbod tab-pane">
                     <legend>AANBOD</legend>
 
                     
@@ -2597,7 +2618,7 @@ de message-id wordt in een hieronderaangeduidde href-met-wiki-link achter het be
                     
                     </fieldset>
 
-                <fieldset id="GAVeld_2015331_1458_43" class="article weetjes">
+                <fieldset id="GAVeld_2015331_1458_43" class="article weetjes tab-pane">
                     <legend>WEETJES</legend>
 
                     
