@@ -1,0 +1,2672 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl-BE" lang="nl-BE"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Extra gegevens</title>
+    <link rel="stylesheet" type="text/css" media="all" href="Extra%20gegevens_bestanden/all.css">
+    <link rel="stylesheet" type="text/css" media="all" href="Extra%20gegevens_bestanden/ind_steekkaart.css">
+    <link rel="shortcut icon" href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/img/favicon.ico">
+    <script src="Extra%20gegevens_bestanden/prototype.js" type="text/javascript"></script>
+    <script src="Extra%20gegevens_bestanden/scriptaculous.js" type="text/javascript"></script><script type="text/javascript" src="Extra%20gegevens_bestanden/builder.js"></script><script type="text/javascript" src="Extra%20gegevens_bestanden/effects.js"></script><script type="text/javascript" src="Extra%20gegevens_bestanden/dragdrop.js"></script><script type="text/javascript" src="Extra%20gegevens_bestanden/controls.js"></script><script type="text/javascript" src="Extra%20gegevens_bestanden/slider.js"></script><script type="text/javascript" src="Extra%20gegevens_bestanden/sound.htm"></script>
+    <script src="Extra%20gegevens_bestanden/snelzoeker.js" type="text/javascript"></script>
+    <!-- <script src="js/ds-sleight.js" type="text/javascript"></script> -->
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="globale_menubalk">
+
+    <ul id="items">
+        <li class="menu_item"><a href="https://www.scoutsengidsenvlaanderen.be/" id="item_sgv">Scouts en Gidsen Vlaanderen</a></li>
+        
+                        <li class="menu_item"><a href="https://www.scoutsengidsenvlaanderen.be/">Scouts en Gidsen Vlaanderen</a></li>
+                    
+                        <li class="menu_item"><a href="http://www.hopper.be/">Hopper</a></li>
+                    
+                        <li class="menu_item"><a href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin">Groepsadministratie</a></li>
+                    
+                        <li class="menu_item"><a href="https://www.scoutsengidsenvlaanderen.org/">Org</a></li>
+                    
+                        <li class="menu_item"><a href="https://wiki.scoutsengidsenvlaanderen.be/">Wiki</a></li>
+                    
+                        <li class="menu_item"><a href="https://vacature.scoutsengidsenvlaanderen.be/">Vacatures</a></li>
+                    
+                        <li class="menu_item"><a href="https://www.scoutsengidsenvlaanderen.be/evenementen">Evenementen</a></li>
+                    
+                        <li class="menu_item"><a href="http://192.168.1.5/">Intranet</a></li>
+                    
+                        <li class="menu_item"><a href="https://vragen.scoutsengidsenvlaanderen.be/staff/?/Tickets/Manage/Index">Kayako</a></li>
+                    
+                        <li><a href="https://www.facebook.com/scoutsengidsenvlaanderen" id="item_facebook" style="background-image: url(https://www.scoutsengidsenvlaanderen.be/files/algemeen/menubalk/balk_sprite_fb.png);">Facebook</a></li>
+                    
+                        <li><a href="https://twitter.com/ScoutsGidsenVL" id="item_twitter" style="background-image: url(https://www.scoutsengidsenvlaanderen.be/files/algemeen/menubalk/balk_sprite_twitter.png);">Twitter</a></li>
+                    
+    </ul>
+
+    <div id="account">
+        
+            <a href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/contact-gegevens.jsp" class="mijn_profiel" rel="nofollow">
+                <span id="item_username">Maarten Vanachter</span>
+                <span id="item_instellingen">Instellingen</span>
+            </a>
+        
+
+        
+
+        <a href="http://wiki.scoutsengidsenvlaanderen.be/handleidingen:groepsadmin:paginahulp:_src_8_TContentExtraEntry_OUTPUT" id="item_help">Help</a>
+
+        
+            <a href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/logout.do" rel="nofollow" id="item_afmelden">Afmelden</a>
+        
+    </div>
+</div>
+
+
+
+<script src="Extra%20gegevens_bestanden/jquery-1.js" charset="utf-8" type="text/javascript"></script>
+<script src="Extra%20gegevens_bestanden/jquery-ui-1.js" charset="utf-8" type="text/javascript"></script>
+<script src="Extra%20gegevens_bestanden/jquery.js" charset="utf-8" type="text/javascript"></script>
+<script type="text/javascript" src="Extra%20gegevens_bestanden/jquery_004.js"></script>
+<script type="text/javascript" src="Extra%20gegevens_bestanden/jquery_003.js"></script>
+<script type="text/javascript" src="Extra%20gegevens_bestanden/jquery_002.js"></script>
+<script src="Extra%20gegevens_bestanden/globale_menubalk.js" charset="utf-8" type="text/javascript"></script>
+
+<script>
+    // Zorg ervoor dat jQuery de standaard-waarde van '$' niet meer overschrijft.
+    jQuery.noConflict();
+</script>
+
+
+<div class="header">
+    <form id="snelzoeker">
+        <img src="Extra%20gegevens_bestanden/system-search.png" alt="lid zoeken" title="lid zoeken">
+        <img src="Extra%20gegevens_bestanden/spinner.gif" alt="spinner" title="spinner" id="lidzoekerspinner" style="display:none;">
+        <input autocomplete="off" id="sz_input" type="text">
+
+        <div style="display: none;" class="auto_complete" id="sz_div"></div>
+        <script language="javascript" type="text/javascript">/* <![CDATA[ */
+                function createSnelZoeker(){
+                    new SnelZoeker("/groepsadmin");
+                }
+                if(window.addEventListener){
+                    window.addEventListener('load',createSnelZoeker,false);
+                }
+                else{
+                    window.attachEvent('onload',createSnelZoeker);
+                }
+        /* ]]> */</script>
+    </form>
+
+    <ul class="nav">
+        <li>
+            
+                
+                <a class="home" href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/src.1.TContentMembersList_OUTPUT.jsp"><img src="Extra%20gegevens_bestanden/go-home.png"> overzicht</a>
+                
+            
+        </li>
+        
+        <li>
+            <a class="stand_van_zaken" href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/fakturatie-groepen.jsp"><img src="Extra%20gegevens_bestanden/start-here.png"> stand van zaken</a>
+        </li>
+
+        <li>
+            <a class="groepsinstellingen" href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/groepsoverzicht.jsp"><img src="Extra%20gegevens_bestanden/system-users.png">
+                groepsinstellingen</a>
+        </li>
+        
+    </ul>
+</div>
+
+<ul style="" id="alert">
+    
+</ul>
+<script type="text/javascript" language="javascript">
+    // <![CDATA[
+    new Effect.Pulsate('alert');
+    // ]]>
+</script>
+
+
+<!-- Berichten worden getoond afhankelijk van validatie-resultaten of een trigger
+Elk bericht heeft in een tabel een "severity", die meteen de hieronder meegegeven class aanduid (err/inf)
+de message-id wordt in een hieronderaangeduidde href-met-wiki-link achter het bericht geplaatst.
+-->
+
+
+
+
+
+
+
+
+
+
+
+            <div class="tab">
+                <div class="tab_header">
+
+                    <!-- Hier een drop-down met de verschillende groepen, indien er meerdere zijn? zoals: -->
+                    
+
+                    <ul>
+                        <li><a href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/src.11.TContentGroupsEntry_OUTPUT.jsp?groepOid=d5f75b320b812440010b81254ef5022e">Groepsgegevens </a></li>
+                        <li><a href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/src.9.TNietVVKSMFunctiesList_OUTPUT.jsp?groepOid=d5f75b320b812440010b81254ef5022e"> Groepseigen functies </a></li>
+                        <li><a href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/src.7.TExtraFieldsList_OUTPUT.jsp?groepOid=d5f75b320b812440010b81254ef5022e"> Groepseigen gegevens </a></li>
+                        <li><a href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/ledenaantallen.jsp?groepOid=d5f75b320b812440010b81254ef5022e">Ledenaantallen </a></li>
+                        <li><a href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/lidworden-inschrijvingen.jsp?groepOid=d5f75b320b812440010b81254ef5022e">Inschrijvingen</a></li>
+                        <li class="current"><strong>Groepsfiche </strong></li>
+                        <li><a href="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin/groepsoverzicht.jsp?groepOid=d5f75b320b812440010b81254ef5022e">Overzicht</a></li>
+                    </ul>
+                    <div class="space-line"></div>
+                </div>
+
+     <div class="tab_page" style="overflow: auto;">
+
+
+    <form name="GroepseigenGegevensInstantiesForm" method="post" action="/groepsadmin/zet-individuele-steekkaart-gegevens-instanties.do">
+    <input name="_id" value="d5f75b320b812440010b812b29e9717b" type="hidden">
+
+
+
+
+        
+
+
+
+
+
+
+
+                <fieldset id="20153110390" class="article ledenleiding">
+                    <legend>LEDEN &amp; LEIDING</legend>
+
+                    
+
+                     
+
+                    
+
+                    <div id="GFManueel201501150001" class="field roepnaam">
+                        <label for="INDIVIDUELE_STEEKKAART-GFManueel201501150001">Roepnaam</label>
+
+                        
+                        
+                        <input id="INDIVIDUELE_STEEKKAART-GFManueel201501150001" name="zet-INDIVIDUELE_STEEKKAART-GFManueel201501150001" type="text">
+                        
+                        
+                        <div class="instructie">Indien anders dan de groepsnaam</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015311_1537_18" class="field krijgtdegroepvraagvooraansluitingvanteveelkandidaatscouts">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015311_1537_18">Krijgt de groep vraag voor aansluiting van te veel kandidaat scouts?</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015311_1537_18" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015311_1537_18">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="ja">
+                                ja
+                            </option>
+                            
+                            <option value="nee">
+                                nee
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> </div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015311_1538_42" class="field zelossenditopmetledenstop">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015311_1538_42">- Ze lossen dit op met ledenstop</label>
+
+                        
+                        <input name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015311_1538_42" value="true" id="extraVink" type="checkbox">
+                        <input name="vinkje-INDIVIDUELE_STEEKKAART-GAVeld_2015311_1538_42" value="false" type="hidden">
+                        
+                        <div class="instructie"> </div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015311_1538_56" class="field zelossenditopmeteenwachtlijst">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015311_1538_56">- Ze lossen dit op met een wachtlijst</label>
+
+                        
+                        <input name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015311_1538_56" value="true" id="extraVink" type="checkbox">
+                        <input name="vinkje-INDIVIDUELE_STEEKKAART-GAVeld_2015311_1538_56" value="false" type="hidden">
+                        
+                        <div class="instructie"> </div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015311_1541_22" class="field bijwelkeleeftijdentakken">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015311_1541_22">- Bij welke leeftijden/ takken?</label>
+
+                        
+                        
+                        <textarea id="INDIVIDUELE_STEEKKAART-GAVeld_2015311_1541_22" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015311_1541_22" rows="4" cols="50"></textarea>
+                        
+                        
+                        <div class="instructie"> </div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015311_1621_57" class="field werktdegroepmetdetakindelingvanscoutsengidsenvlaanderen">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015311_1621_57">Werkt de groep met de takindeling van Scouts en Gidsen Vlaanderen? </label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015311_1621_57" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015311_1621_57">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="ja">
+                                ja
+                            </option>
+                            
+                            <option value="nee">
+                                nee
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015311_1625_49" class="field zonietwatisdetakindelingenhoehetenze">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015311_1625_49">- Zo niet, wat is de takindeling en hoe heten ze? </label>
+
+                        
+                        
+                        <textarea id="INDIVIDUELE_STEEKKAART-GAVeld_2015311_1625_49" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015311_1625_49" rows="4" cols="50"></textarea>
+                        
+                        
+                        <div class="instructie">vb:
+1e lj: Kapoenen
+2e lj: Kapoenen
+3e lj: Kabouters ...
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015330_150_43" class="field gendermix">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015330_150_43">Gendermix:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015330_150_43" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015330_150_43">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="gemengd">
+                                gemengd
+                            </option>
+                            
+                            <option value="gesplitst">
+                                gesplitst
+                            </option>
+                            
+                            <option value="alleen jongens">
+                                alleen jongens
+                            </option>
+                            
+                            <option value="alleen meisjes">
+                                alleen meisjes
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015330_1456_17" class="field maaktgebruikvanscoutingopmaat">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1456_17">Maakt gebruik van Scouting op Maat</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1456_17" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015330_1456_17">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="ja">
+                                ja
+                            </option>
+                            
+                            <option value="nee">
+                                nee
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1029_41" class="field drugsalcoholbeleid">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1029_41">Drugs &amp; alcoholbeleid</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1029_41" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1029_41">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="de groep heeft geen beleid">
+                                de groep heeft geen beleid
+                            </option>
+                            
+                            <option value="de groep heeft beleid en wordt gehanteerd">
+                                de groep heeft beleid en wordt gehanteerd
+                            </option>
+                            
+                            <option value="de groep heeft beleid maar wordt niet toegepast">
+                                de groep heeft beleid maar wordt niet toegepast
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015311_1545_7" class="field andereopmerkingenoverledenenleiding">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015311_1545_7">Andere opmerkingen over leden en leiding:</label>
+
+                        
+                        
+                        <textarea id="INDIVIDUELE_STEEKKAART-GAVeld_2015311_1545_7" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015311_1545_7" rows="4" cols="50"></textarea>
+                        
+                        
+                        <div class="instructie"> vb: kapoenen zitten bij een andere groep, ...
+</div>
+                    </div>
+
+                    
+                    </fieldset>
+
+                <fieldset id="GAVeld_2015330_1559_16" class="article organisatie">
+                    <legend>ORGANISATIE</legend>
+
+                    
+
+                     
+
+
+                    
+
+                    <div id="GAVeld_2015330_162_38" class="field momentvanactiviteit">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015330_162_38">Moment van activiteit:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015330_162_38" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015330_162_38">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="za VM">
+                                za VM
+                            </option>
+                            
+                            <option value="za NM">
+                                za NM
+                            </option>
+                            
+                            <option value="za heel de dag">
+                                za heel de dag
+                            </option>
+                            
+                            <option value="zo VM">
+                                zo VM
+                            </option>
+                            
+                            <option value="zo NM">
+                                zo NM
+                            </option>
+                            
+                            <option value="zo heel de dag, andere">
+                                zo heel de dag, andere
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015311_2158_9" class="field frequentievanactiviteit">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015311_2158_9">Frequentie van activiteit:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015311_2158_9" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015311_2158_9">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="elke week">
+                                elke week
+                            </option>
+                            
+                            <option value="tweewekelijks">
+                                tweewekelijks
+                            </option>
+                            
+                            <option value="maandelijks">
+                                maandelijks
+                            </option>
+                            
+                            <option value="drie weken met één vrije week">
+                                drie weken met één vrije week
+                            </option>
+                            
+                            <option value="andere">
+                                andere
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015330_167_35" class="field anderemomentenfrequentie">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015330_167_35">- andere momenten/frequentie:</label>
+
+                        
+                        
+                        <input id="INDIVIDUELE_STEEKKAART-GAVeld_2015330_167_35" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015330_167_35" type="text">
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015330_168_32" class="field kiesvisumverkiezinggroepsleiding">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015330_168_32">Kiesvisum: verkiezing groepsleiding:</label>
+
+                        
+                        
+                        <input id="INDIVIDUELE_STEEKKAART-GAVeld_2015330_168_32" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015330_168_32" type="text">
+                        
+                        
+                        <div class="instructie"> begindatum
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015330_1613_29" class="field ">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1613_29">.</label>
+
+                        
+                        
+                        <input id="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1613_29" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015330_1613_29" type="text">
+                        
+                        
+                        <div class="instructie"> einddatum
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015330_1615_42" class="field goedgekeurdeafwijkingenvanspelregels">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1615_42">Goedgekeurde afwijkingen van spelregels:</label>
+
+                        
+                        
+                        <textarea id="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1615_42" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015330_1615_42" rows="4" cols="50"></textarea>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015330_1616_21" class="field engagementomvormingtevolgen">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1616_21">Engagement om vorming te volgen:</label>
+
+                        
+                        
+                        <textarea id="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1616_21" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015330_1616_21" rows="4" cols="50"></textarea>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015330_1618_6" class="field frequentiegroepsraad">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1618_6">Frequentie groepsraad: </label>
+
+                        
+                        
+                        <input id="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1618_6" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015330_1618_6" type="text">
+                        
+                        
+                        <div class="instructie"> aantal per werkjaar
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015330_1614_32" class="field isereenvzw">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1614_32">Is er een vzw?</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1614_32" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015330_1614_32">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="ja">
+                                ja
+                            </option>
+                            
+                            <option value="nee">
+                                nee
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015330_1622_15" class="field naam">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1622_15">- Naam:</label>
+
+                        
+                        
+                        <input id="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1622_15" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015330_1622_15" type="text">
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015330_1622_40" class="field ondernemingsnummer">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1622_40">- Ondernemingsnummer:</label>
+
+                        
+                        
+                        <input id="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1622_40" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015330_1622_40" type="text">
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015330_1623_15" class="field koppelingstaatsblad">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1623_15">- Koppeling staatsblad:</label>
+
+                        
+                        
+                        <input id="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1623_15" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015330_1623_15" type="text">
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015330_1625_43" class="field rolvandevzw">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1625_43">- Rol van de vzw:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1625_43" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015330_1625_43">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="lokalen">
+                                lokalen
+                            </option>
+                            
+                            <option value="financiën">
+                                financiën
+                            </option>
+                            
+                            <option value="pedagogische werking">
+                                pedagogische werking
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015330_1631_41" class="field isereenoudleidingwerkingverbondenaandegroep">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1631_41">Is er een oud-leiding werking verbonden aan de groep?</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1631_41" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015330_1631_41">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="ja">
+                                ja
+                            </option>
+                            
+                            <option value="nee">
+                                nee
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> = gestopte leiding die de groep ondersteunt
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015330_164_40" class="field naam">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015330_164_40">- Naam:</label>
+
+                        
+                        
+                        <input id="INDIVIDUELE_STEEKKAART-GAVeld_2015330_164_40" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015330_164_40" type="text">
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015330_1634_39" class="field rolvandewerking">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1634_39">- Rol van de werking:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1634_39" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015330_1634_39">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="fourageploeg">
+                                fourageploeg
+                            </option>
+                            
+                            <option value="onderhoud lokaal">
+                                onderhoud lokaal
+                            </option>
+                            
+                            <option value="beheer financiën">
+                                beheer financiën
+                            </option>
+                            
+                            <option value="andere">
+                                andere
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015330_1636_9" class="field andere">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1636_9">- andere:</label>
+
+                        
+                        
+                        <input id="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1636_9" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015330_1636_9" type="text">
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015330_1637_14" class="field isereenouderwerking">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1637_14">Is er een ouderwerking?</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1637_14" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015330_1637_14">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="ja">
+                                ja
+                            </option>
+                            
+                            <option value="nee">
+                                nee
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> = groep ouders die de groep ondersteunt
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015330_1638_20" class="field naam">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1638_20">- Naam:</label>
+
+                        
+                        
+                        <input id="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1638_20" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015330_1638_20" type="text">
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015330_1639_51" class="field voertaal">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1639_51">Voertaal:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1639_51" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015330_1639_51">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="Nederlands">
+                                Nederlands
+                            </option>
+                            
+                            <option value="Frans">
+                                Frans
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015330_1643_17" class="field werktnauwsamenmetjongensmeisjesgroepakabejin">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1643_17">Werkt nauw samen met (jongens-meisjesgroep, akabe, jin, ...)</label>
+
+                        
+                        
+                        <input id="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1643_17" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015330_1643_17" type="text">
+                        
+                        
+                        <div class="instructie">groepsnummer
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015330_1644_15" class="field andereopmerkingenoverorganisatie">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1644_15">Andere opmerkingen over organisatie:</label>
+
+                        
+                        
+                        <textarea id="INDIVIDUELE_STEEKKAART-GAVeld_2015330_1644_15" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015330_1644_15" rows="4" cols="50"></textarea>
+                        
+                        
+                        <div class="instructie">
+</div>
+                    </div>
+
+                    
+                    </fieldset>
+
+                <fieldset id="GAVeld_2015331_107_44" class="article lokalen">
+                    <legend>LOKALEN</legend>
+
+                    
+
+                     
+
+
+                    
+                    </fieldset>
+
+                <fieldset id="GAVeld_2015331_1012_18" class="article lokalenvisum">
+                    <legend>Lokalenvisum</legend>
+
+                    
+
+                     
+
+
+                    
+
+                    <div id="GAVeld_2015331_1017_8" class="field datumvanindieningresultaten">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1017_8">- Datum van indiening resultaten:</label>
+
+                        
+                        
+                        <input id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1017_8" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1017_8" type="text">
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1017_48" class="field datumdeadlineactiesvoltooid">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1017_48">- Datum deadline acties voltooid:</label>
+
+                        
+                        
+                        <input id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1017_48" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1017_48" type="text">
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1019_52" class="field minimumnormbehaald">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1019_52">- Minimumnorm behaald:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1019_52" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1019_52">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="ja">
+                                ja
+                            </option>
+                            
+                            <option value="nee">
+                                nee
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1020_50" class="field verhurenvanlokaal">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1020_50">- Verhuren van lokaal:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1020_50" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1020_50">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="ja">
+                                ja
+                            </option>
+                            
+                            <option value="nee">
+                                nee
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1021_24" class="field erkenningbijtoerismevlaanderen">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1021_24">- Erkenning bij Toerisme Vlaanderen:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1021_24" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1021_24">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="ja">
+                                ja
+                            </option>
+                            
+                            <option value="nee">
+                                nee
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1022_49" class="field beheerderofondersteunendeorganisatievanhetlokaal">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1022_49">- Beheerder of ondersteunende organisatie van het lokaal:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1022_49" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1022_49">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="vzw">
+                                vzw
+                            </option>
+                            
+                            <option value="oudercomité">
+                                oudercomité
+                            </option>
+                            
+                            <option value="geen, de groep doet het zelf">
+                                geen, de groep doet het zelf
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+                    </fieldset>
+
+                <fieldset id="GAVeld_2015311_2118_16" class="article eigenaarencontractlokalen">
+                    <legend>Eigenaar en contract lokalen</legend>
+
+                    
+
+                     
+
+
+                    
+
+                    <div id="GAVeld_2015311_1538_26" class="field naam">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015311_1538_26">- Naam:</label>
+
+                        
+                        
+                        <input id="INDIVIDUELE_STEEKKAART-GAVeld_2015311_1538_26" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015311_1538_26" type="text">
+                        
+                        
+                        <div class="instructie">null</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015330_165_37" class="field typeeigenaar">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015330_165_37">- Type eigenaar:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015330_165_37" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015330_165_37">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="Parochiale of dekenale vzw">
+                                Parochiale of dekenale vzw
+                            </option>
+                            
+                            <option value="vzw van het Bisdom">
+                                vzw van het Bisdom
+                            </option>
+                            
+                            <option value="kerkfabriek">
+                                kerkfabriek
+                            </option>
+                            
+                            <option value="gemeente">
+                                gemeente
+                            </option>
+                            
+                            <option value="orde, congregatie, klooster of abdij">
+                                orde, congregatie, klooster of abdij
+                            </option>
+                            
+                            <option value="inrichtende macht of schoolbestuur">
+                                inrichtende macht of schoolbestuur
+                            </option>
+                            
+                            <option value="vzw verbonden aan groep">
+                                vzw verbonden aan groep
+                            </option>
+                            
+                            <option value="andere">
+                                andere
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie">null</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015330_166_41" class="field andere">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015330_166_41">- andere:</label>
+
+                        
+                        
+                        <input id="INDIVIDUELE_STEEKKAART-GAVeld_2015330_166_41" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015330_166_41" type="text">
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015330_165_58" class="field typecontract">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015330_165_58">- Type contract:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015330_165_58" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015330_165_58">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="bruikleen">
+                                bruikleen
+                            </option>
+                            
+                            <option value="huurovereenkomst">
+                                huurovereenkomst
+                            </option>
+                            
+                            <option value="erfpacht">
+                                erfpacht
+                            </option>
+                            
+                            <option value="recht van opstal">
+                                recht van opstal
+                            </option>
+                            
+                            <option value="(jeugd)concessie">
+                                (jeugd)concessie
+                            </option>
+                            
+                            <option value="geen">
+                                geen
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_137_2" class="field eindecontract">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_137_2">- Einde contract:</label>
+
+                        
+                        
+                        <input id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_137_2" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_137_2" type="text">
+                        
+                        
+                        <div class="instructie"> jaartal
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_139_17" class="field contractonbepaaldeduur">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_139_17">- Contract onbepaalde duur</label>
+
+                        
+                        <input name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_139_17" value="true" id="extraVink" type="checkbox">
+                        <input name="vinkje-INDIVIDUELE_STEEKKAART-GAVeld_2015331_139_17" value="false" type="hidden">
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+                    </fieldset>
+
+                <fieldset id="GAVeld_2015331_1314_3" class="article eigenaarencontractgrond">
+                    <legend>Eigenaar en contract grond</legend>
+
+                    
+
+                     indien lokalen  in eigendom zijn van de vzw verbonden aan de groep
+
+
+                    
+
+                    <div id="GAVeld_2015331_1318_27" class="field naam">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1318_27">- Naam:</label>
+
+                        
+                        
+                        <input id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1318_27" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1318_27" type="text">
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1322_22" class="field typeeigenaar">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1322_22">- Type eigenaar:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1322_22" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1322_22">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="Parochiale of dekenale vzw">
+                                Parochiale of dekenale vzw
+                            </option>
+                            
+                            <option value="vzw van het Bisdom">
+                                vzw van het Bisdom
+                            </option>
+                            
+                            <option value="kerkfabriek">
+                                kerkfabriek
+                            </option>
+                            
+                            <option value="gemeente">
+                                gemeente
+                            </option>
+                            
+                            <option value="orde, congregatie, klooster of abdij">
+                                orde, congregatie, klooster of abdij
+                            </option>
+                            
+                            <option value="inrichtende macht of schoolbestuur">
+                                inrichtende macht of schoolbestuur
+                            </option>
+                            
+                            <option value="vzw verbonden aan groep">
+                                vzw verbonden aan groep
+                            </option>
+                            
+                            <option value="andere">
+                                andere
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1322_38" class="field andere">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1322_38">- andere:</label>
+
+                        
+                        
+                        <input id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1322_38" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1322_38" type="text">
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1324_21" class="field typecontract">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1324_21">- Type contract:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1324_21" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1324_21">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="bruikleen">
+                                bruikleen
+                            </option>
+                            
+                            <option value="huurovereenkost">
+                                huurovereenkost
+                            </option>
+                            
+                            <option value="erfpacht">
+                                erfpacht
+                            </option>
+                            
+                            <option value="recht van opstal">
+                                recht van opstal
+                            </option>
+                            
+                            <option value="(jeugd)concessie">
+                                (jeugd)concessie
+                            </option>
+                            
+                            <option value="geen">
+                                geen
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1325_20" class="field einddatumcontract">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1325_20">- Einddatum contract:</label>
+
+                        
+                        
+                        <input id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1325_20" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1325_20" type="text">
+                        
+                        
+                        <div class="instructie"> jaartal
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1325_45" class="field contractonbepaaldeduur">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1325_45">- contract onbepaalde duur</label>
+
+                        
+                        <input name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1325_45" value="true" id="extraVink" type="checkbox">
+                        <input name="vinkje-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1325_45" value="false" type="hidden">
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1328_0" class="field renovatieofverbouwingen">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1328_0">Renovatie of verbouwingen:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1328_0" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1328_0">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="hebben (ver)bouwplanen">
+                                hebben (ver)bouwplanen
+                            </option>
+                            
+                            <option value="zijn aan het (ver)bouwen">
+                                zijn aan het (ver)bouwen
+                            </option>
+                            
+                            <option value="hebben net gebouwd">
+                                hebben net gebouwd
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1331_47" class="field isereendossiergiftenmetfiscalevrijstellinglopendebijscoutsengidsenvlaanderen">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1331_47">Is er een dossier 'giften met fiscale vrijstelling' lopende bij Scouts en Gidsen Vlaanderen?</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1331_47" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1331_47">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="ja">
+                                ja
+                            </option>
+                            
+                            <option value="nee">
+                                nee
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1332_41" class="field indienjadossiernummer">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1332_41">- indien ja, dossiernummer:</label>
+
+                        
+                        
+                        <input id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1332_41" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1332_41" type="text">
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1333_25" class="field andereopmerkingenoverlokalen">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1333_25">Andere opmerkingen over lokalen</label>
+
+                        
+                        
+                        <textarea id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1333_25" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1333_25" rows="4" cols="50"></textarea>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+                    </fieldset>
+
+                <fieldset id="GAVeld_2015331_1334_51" class="article vorming">
+                    <legend>VORMING</legend>
+
+                    
+
+                     
+
+
+                    
+
+                    <div id="GAVeld_2015331_1336_3" class="field deelnameaanvorminggouwdistrict">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1336_3">Deelname aan vorming gouw/district:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1336_3" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1336_3">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="altijd">
+                                altijd
+                            </option>
+                            
+                            <option value="soms">
+                                soms
+                            </option>
+                            
+                            <option value="nooit">
+                                nooit
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1337_43" class="field indegroepzelfvormingorganiseren">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1337_43">In de groep zelf vorming organiseren:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1337_43" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1337_43">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="altijd">
+                                altijd
+                            </option>
+                            
+                            <option value="soms">
+                                soms
+                            </option>
+                            
+                            <option value="nooit">
+                                nooit
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1338_17" class="field andereopmerkingenovervorming">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1338_17">Andere opmerkingen over vorming:</label>
+
+                        
+                        
+                        <textarea id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1338_17" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1338_17" rows="4" cols="50"></textarea>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+                    </fieldset>
+
+                <fieldset id="GAVeld_2015331_1343_30" class="article netwerkomgeving">
+                    <legend>NETWERK / OMGEVING</legend>
+
+                    
+
+                     
+
+
+                    
+
+                    <div id="GAVeld_2015331_1345_21" class="field contactmetdeburen">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1345_21">Contact met de buren:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1345_21" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1345_21">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="goed">
+                                goed
+                            </option>
+                            
+                            <option value="slecht">
+                                slecht
+                            </option>
+                            
+                            <option value="geen buren">
+                                geen buren
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1348_3" class="field hebbeneenaalmoezenierverbondenaandegroep">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1348_3">Hebben een aalmoezenier verbonden aan de groep</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1348_3" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1348_3">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="ja">
+                                ja
+                            </option>
+                            
+                            <option value="nee">
+                                nee
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1349_30" class="field deelnamejeugdraad">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1349_30">Deelname jeugdraad:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1349_30" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1349_30">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="altijd">
+                                altijd
+                            </option>
+                            
+                            <option value="soms">
+                                soms
+                            </option>
+                            
+                            <option value="nooit">
+                                nooit
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1350_27" class="field aanwezigopdistrictsraden">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1350_27">Aanwezig op districtsraden:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1350_27" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1350_27">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="altijd">
+                                altijd
+                            </option>
+                            
+                            <option value="soms">
+                                soms
+                            </option>
+                            
+                            <option value="nooit">
+                                nooit
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1351_12" class="field deelnameaangouwdistrictsactiviteiten">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1351_12">Deelname aan gouw-/districtsactiviteiten:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1351_12" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1351_12">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="altijd">
+                                altijd
+                            </option>
+                            
+                            <option value="soms">
+                                soms
+                            </option>
+                            
+                            <option value="nooit">
+                                nooit
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1353_33" class="field andereopmerkingenovernetwerkomgeving">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1353_33">Andere opmerkingen over netwerk/omgeving:</label>
+
+                        
+                        
+                        <textarea id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1353_33" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1353_33" rows="4" cols="50"></textarea>
+                        
+                        
+                        <div class="instructie">mag ook gebruikt worden voor verduidelijking van vorige velden</div>
+                    </div>
+
+                    
+                    </fieldset>
+
+                <fieldset id="GAVeld_2015331_1356_12" class="article communicatie">
+                    <legend>COMMUNICATIE</legend>
+
+                    
+
+                     
+
+
+                    
+
+                    <div id="GAVeld_2015331_1357_14" class="field wordtereenledenbladactiviteitenboekjeverspreid">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1357_14">Wordt er een ledenblad/activiteitenboekje verspreid?</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1357_14" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1357_14">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="ja">
+                                ja
+                            </option>
+                            
+                            <option value="nee">
+                                nee
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1358_36" class="field frequentie">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1358_36">- Frequentie:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1358_36" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1358_36">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="maandelijks">
+                                maandelijks
+                            </option>
+                            
+                            <option value="elke twee maanden">
+                                elke twee maanden
+                            </option>
+                            
+                            <option value="elke drie maanden">
+                                elke drie maanden
+                            </option>
+                            
+                            <option value="halfjaarlijks">
+                                halfjaarlijks
+                            </option>
+                            
+                            <option value="jaarlijks">
+                                jaarlijks
+                            </option>
+                            
+                            <option value="andere">
+                                andere
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_145_14" class="field hebbeneenwebsiteautomatischvangroepsadmindieuptodateis">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_145_14">Hebben een website (automatisch van groepsadmin) die up to date is:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_145_14" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_145_14">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="ja">
+                                ja
+                            </option>
+                            
+                            <option value="nee">
+                                nee
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_146_19" class="field gebruikendebannervanhopperwinkelenhopperjeugdverblijfopdewebsitevandegroep">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_146_19">Gebruiken de banner van Hopper winkel en Hopper Jeugdverblijf op de website van de groep:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_146_19" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_146_19">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="ja">
+                                ja
+                            </option>
+                            
+                            <option value="nee">
+                                nee
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_146_57" class="field anderreopmerkingenovercommunicatie">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_146_57">Anderre opmerkingen over communicatie:</label>
+
+                        
+                        
+                        <textarea id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_146_57" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_146_57" rows="4" cols="50"></textarea>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+                    </fieldset>
+
+                <fieldset id="GAVeld_2015331_1411_47" class="article extraopvolging">
+                    <legend>EXTRA OPVOLGING</legend>
+
+                    
+
+                     
+
+
+                    
+
+                    <div id="GAVeld_2015331_1413_38" class="field werkpuntenvoordegroep">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1413_38">Werkpunten voor de groep</label>
+
+                        
+                        
+                        <input id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1413_38" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1413_38" type="text">
+                        
+                        
+                        <div class="instructie"> eventueel op basis Groep onder de Loep
+= onduidelijk
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1415_45" class="field hierkanjeinhetkortnoterenwatextraaandachtnodigheeft">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1415_45">Hier kan je in het kort noteren wat extra aandacht nodig heeft:</label>
+
+                        
+                        
+                        <textarea id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1415_45" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1415_45" rows="4" cols="50"></textarea>
+                        
+                        
+                        <div class="instructie"> enkel groepsgebonden werkpunten
+</div>
+                    </div>
+
+                    
+                    </fieldset>
+
+                <fieldset id="GAVeld_2015331_1416_25" class="article kampenweekend">
+                    <legend>KAMP EN WEEKEND</legend>
+
+                    
+
+                     
+
+
+                    
+                    </fieldset>
+
+                <fieldset id="GAVeld_2015331_1417_31" class="article kampvisumondertekend">
+                    <legend>Kampvisum ondertekend?</legend>
+
+                    
+
+                     
+
+
+                    
+
+                    <div id="GAVeld_2015331_1418_34" class="field kapoenen">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1418_34">Kapoenen:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1418_34" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1418_34">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="ja">
+                                ja
+                            </option>
+                            
+                            <option value="nee">
+                                nee
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1419_29" class="field kampregistratiekapoenenok">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1419_29">- Kampregistratie kapoenen ok?</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1419_29" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1419_29">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="ja">
+                                ja
+                            </option>
+                            
+                            <option value="nee">
+                                nee
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1420_4" class="field opmerkingenkapoenen">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1420_4">- Opmerkingen kapoenen:</label>
+
+                        
+                        
+                        <textarea id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1420_4" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1420_4" rows="4" cols="50"></textarea>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1421_8" class="field welpenkabouters">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1421_8">Welpen/kabouters: </label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1421_8" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1421_8">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="ja">
+                                ja
+                            </option>
+                            
+                            <option value="nee">
+                                nee
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1422_17" class="field kampregistratiewelpenkaboutersok">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1422_17">- Kampregistratie welpen/kabouters ok?</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1422_17" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1422_17">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="ja">
+                                ja
+                            </option>
+                            
+                            <option value="nee">
+                                nee
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1423_44" class="field opmerkingenwelpenkabouters">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1423_44">- Opmerkingen welpen/kabouters:</label>
+
+                        
+                        
+                        <textarea id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1423_44" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1423_44" rows="4" cols="50"></textarea>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1424_19" class="field jonggivers">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1424_19">Jonggivers:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1424_19" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1424_19">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="ja">
+                                ja
+                            </option>
+                            
+                            <option value="nee">
+                                nee
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1424_35" class="field kampregistratiejonggiversok">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1424_35">- Kampregistratie jonggivers ok?</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1424_35" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1424_35">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="ja">
+                                ja
+                            </option>
+                            
+                            <option value="nee">
+                                nee
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1425_32" class="field opmerkingenjonggivers">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1425_32">- Opmerkingen jonggivers:</label>
+
+                        
+                        
+                        <textarea id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1425_32" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1425_32" rows="4" cols="50"></textarea>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1427_47" class="field givers">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1427_47">Givers:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1427_47" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1427_47">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="ja">
+                                ja
+                            </option>
+                            
+                            <option value="nee">
+                                nee
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1430_2" class="field kampregistratiegiversok">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1430_2">- Kampregistratie givers ok?</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1430_2" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1430_2">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="ja">
+                                ja
+                            </option>
+                            
+                            <option value="nee">
+                                nee
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1430_17" class="field opmerkingengivers">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1430_17">- Opmerkingen givers:</label>
+
+                        
+                        
+                        <textarea id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1430_17" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1430_17" rows="4" cols="50"></textarea>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1431_17" class="field jins">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1431_17">Jins:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1431_17" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1431_17">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="ja">
+                                ja
+                            </option>
+                            
+                            <option value="nee">
+                                nee
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1433_50" class="field kampregistratiejinsok">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1433_50">- Kampregistratie Jins ok?</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1433_50" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1433_50">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="ja">
+                                ja
+                            </option>
+                            
+                            <option value="nee">
+                                nee
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1434_37" class="field opmerkingenjins">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1434_37">- Opmerkingen jins:</label>
+
+                        
+                        
+                        <textarea id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1434_37" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1434_37" rows="4" cols="50"></textarea>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1435_27" class="field extratakken">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1435_27">Extra takken:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1435_27" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1435_27">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="ja">
+                                ja
+                            </option>
+                            
+                            <option value="nee">
+                                nee
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1435_44" class="field opmerkingenextratakken">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1435_44">- Opmerkingen extra takken:</label>
+
+                        
+                        
+                        <textarea id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1435_44" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1435_44" rows="4" cols="50"></textarea>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+                    </fieldset>
+
+                <fieldset id="GAVeld_2015331_1438_54" class="article kamp">
+                    <legend>Kamp</legend>
+
+                    
+
+                     
+
+
+                    
+
+                    <div id="GAVeld_2015331_1437_55" class="field typekamp">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1437_55">Type kamp:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1437_55" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1437_55">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="takkamp, jaarlijks groepskamp">
+                                takkamp, jaarlijks groepskamp
+                            </option>
+                            
+                            <option value="3-jaarlijks gropeskamp">
+                                3-jaarlijks gropeskamp
+                            </option>
+                            
+                            <option value="andere">
+                                andere
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1438_16" class="field andere">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1438_16">- andere:</label>
+
+                        
+                        
+                        <input id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1438_16" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1438_16" type="text">
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1441_55" class="field frequentiebuitenlandskamp">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1441_55">Frequentie buitenlands kamp:</label>
+
+                        
+                        
+                        <input id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1441_55" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1441_55" type="text">
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1443_24" class="field jins">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1443_24"> - Jins:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1443_24" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1443_24">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="jaarlijks">
+                                jaarlijks
+                            </option>
+                            
+                            <option value="om de 2 jaar">
+                                om de 2 jaar
+                            </option>
+                            
+                            <option value="om de 3 jaar">
+                                om de 3 jaar
+                            </option>
+                            
+                            <option value="nooit">
+                                nooit
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1443_53" class="field givers">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1443_53">- Givers:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1443_53" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1443_53">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="jaarlijks">
+                                jaarlijks
+                            </option>
+                            
+                            <option value="om de 2 jaar">
+                                om de 2 jaar
+                            </option>
+                            
+                            <option value="om de 3 jaar">
+                                om de 3 jaar
+                            </option>
+                            
+                            <option value="nooit">
+                                nooit
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1444_13" class="field groep">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1444_13">- Groep:</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1444_13" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1444_13">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="jaarlijks">
+                                jaarlijks
+                            </option>
+                            
+                            <option value="om de 2 jaar">
+                                om de 2 jaar
+                            </option>
+                            
+                            <option value="om de 3 jaar">
+                                om de 3 jaar
+                            </option>
+                            
+                            <option value="nooit">
+                                nooit
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1446_4" class="field makenkinderendieverminderdlidgeldgenietengebruikvangoedkopertariefophopperjeugdverblijven">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1446_4">Maken kinderen die verminderd lidgeld genieten gebruik van goedkoper tarief op Hopper jeugdverblijven?</label>
+
+                        
+                        <select id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1446_4" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1446_4">
+
+                            
+                            <option value="" selected="selected"></option>
+                            
+                            
+                            <option value="ja">
+                                ja
+                            </option>
+                            
+                            <option value="nee">
+                                nee
+                            </option>
+                            
+                        </select>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1446_27" class="field andereopmerkingenoverkampenweekend">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1446_27">Andere opmerkingen over kamp en weekend:</label>
+
+                        
+                        
+                        <textarea id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1446_27" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1446_27" rows="4" cols="50"></textarea>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+                    </fieldset>
+
+                <fieldset id="GAVeld_2015331_1450_3" class="article aanbod">
+                    <legend>AANBOD</legend>
+
+                    
+
+                     
+
+
+                    
+
+                    <div id="GAVeld_2015331_1451_22" class="field wederkerendeevenementen">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1451_22">Wederkerende evenementen:</label>
+
+                        
+                        
+                        <textarea id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1451_22" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1451_22" rows="4" cols="50"></textarea>
+                        
+                        
+                        <div class="instructie">vb: grote fuif, eetavond, quiz, ...
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1453_44" class="field districtenofgouwgingenlangsopeenactiviteitvandegroep">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1453_44">District en/of gouw gingen langs  op een activiteit van de groep</label>
+
+                        
+                        <input name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1453_44" value="true" id="extraVink" type="checkbox">
+                        <input name="vinkje-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1453_44" value="false" type="hidden">
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1454_15" class="field wanneer">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1454_15">- wanneer?</label>
+
+                        
+                        
+                        <input id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1454_15" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1454_15" type="text">
+                        
+                        
+                        <div class="instructie"> datum
+</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_1455_54" class="field activiteit">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1455_54">- activiteit:</label>
+
+                        
+                        
+                        <textarea id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_1455_54" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_1455_54" rows="4" cols="50"></textarea>
+                        
+                        
+                        <div class="instructie"> 
+</div>
+                    </div>
+
+                    
+                    </fieldset>
+
+                <fieldset id="GAVeld_2015331_1458_43" class="article weetjes">
+                    <legend>WEETJES</legend>
+
+                    
+
+                     
+
+
+                    
+
+                    <div id="GAVeld_2015331_150_48" class="field welkuniformisverplichtindegroep">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_150_48">Welk uniform is verplicht in de groep?</label>
+
+                        
+                        
+                        <textarea id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_150_48" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_150_48" rows="4" cols="50"></textarea>
+                        
+                        
+                        <div class="instructie"> opdelen per tak of leeftijd en per kledingstuk, das = nr van de kleur invullen</div>
+                    </div>
+
+                    
+
+                    <div id="GAVeld_2015331_152_8" class="field leukeweetjes">
+                        <label for="INDIVIDUELE_STEEKKAART-GAVeld_2015331_152_8">Leuke weetjes</label>
+
+                        
+                        
+                        <textarea id="INDIVIDUELE_STEEKKAART-GAVeld_2015331_152_8" name="zet-INDIVIDUELE_STEEKKAART-GAVeld_2015331_152_8" rows="4" cols="50"></textarea>
+                        
+                        
+                        <div class="instructie"> vb: hebben een fanfare, lopen jaarlijks naar Scherpenheuvel, ...
+</div>
+                    </div>
+
+                    
+                </fieldset>
+
+
+        <div class="opt entry button">
+            <input value="Bewaar" class="change button" type="submit">
+        </div>
+
+
+</form>
+
+</div>
+</div>
+
+
+
+<div class="footer">
+    <p style="float:right">Versie 7.5.0.17<small>.0b50c1f-dirty</small></p>
+    <b><a href="http://www.scoutsengidsenvlaanderen.be/">Scouts en Gidsen Vlaanderen</a> vzw</b>
+    <br>
+
+    <img src="Extra%20gegevens_bestanden/home.png" alt="Adres" style="vertical-align: middle;" height="20" width="20">
+    &nbsp;Lange Kievitstraat 74, &nbsp;B-2018 Antwerpen&nbsp;&nbsp;&nbsp;
+    <img src="Extra%20gegevens_bestanden/cell.png" alt="Telefoon" style="vertical-align: middle;" height="20" width="20">
+    &nbsp;+ 32 3 231 16 20&nbsp;&nbsp;&nbsp;
+    <a href="mailto:groepsadministratie@scoutsengidsenvlaanderen.be"><img src="Extra%20gegevens_bestanden/letter-closed.png" alt="Mail" style="vertical-align: middle;" height="20" width="20"></a>
+    &nbsp;
+    <a href="mailto:groepsadministratie@scoutsengidsenvlaanderen.be">groepsadministratie@scoutsengidsenvlaanderen.be</a>
+    <br>
+    <br>
+
+    <a href="https://wiki.scoutsengidsenvlaanderen.be/doku.php?id=disclaimer" title="disclaimer">Disclaimer</a>
+</div>
+
+
+
+
+</body></html>

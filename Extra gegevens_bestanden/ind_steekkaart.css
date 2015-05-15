@@ -1,0 +1,125 @@
+
+form[name="GroepseigenGegevensInstantiesForm"] fieldset {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color -moz-use-text-color #eeeeee;
+    border-image: none;
+    border-style: none none solid;
+    border-width: medium medium 2px;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px 0 15px;
+    text-align: left;
+}
+form[name="GroepseigenGegevensInstantiesForm"] fieldset legend {
+    font-size: 1.1em;
+    padding: 0;
+}
+form[name="GroepseigenGegevensInstantiesForm"] label {
+    display: inline-block;
+    min-width: 300px;
+}
+form[name="GroepseigenGegevensInstantiesForm"] input[type="text"] {
+    width: 250px;
+}
+form[name="GroepseigenGegevensInstantiesForm"] textarea {
+    display: block;
+    margin-top: 5px;
+    width: 552px;
+}
+form[name="GroepseigenGegevensInstantiesForm"] .instructie {
+    color: #8b8b8b;
+    display: inline;
+    font-size: 0.75em;
+    margin-left: 10px;
+}
+form[name="GroepseigenGegevensInstantiesForm"] .intro {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+form[name="GroepseigenGegevensInstantiesForm"] select {
+    margin-left: 0;
+}
+form[name="GroepseigenGegevensInstantiesForm"] #d5f75e1e4610ed0201461f01ebc70012 {
+    min-width: 300px;
+}
+#d5f75e1e46f060b2014720df14c607c2 label, #d5f75e1e4610ed0201461f026f8e0013 label {
+    margin-top: 15px;
+}
+#d5f75e1e4610ed0201461f119f740016 label {
+    margin-top: 15px;
+}
+#d5f75e1e46f060b201473541be3907e9 label {
+    width: 300px;
+}
+#d5f75e1e4610ed0201461f15b3fe001d #d5f75e1e463384de0146390e395900e2 {
+    border: 1px solid #eeeeee;
+    margin: 10px 10px 25px;
+    padding: 10px;
+}
+#d5f75e1e4610ed0201461f15b3fe001d #d5f75e1e463384de0146390e395900e2 select {
+    display: block;
+    font-size: 1.2em;
+    margin: auto;
+}
+#d5f75e1e4610ed0201461f15b3fe001d #d5f75e1e463384de0146390e395900e2 select + .instructie {
+    display: block;
+    margin: 10px auto auto;
+    width: 615px;
+}
+#d5f75e1e46f060b2014720e22ec507c3 a {
+    display: block;
+    width: 867px;
+}
+#d5f75e1e463384de01463913fa7600e7 label, #d5f75e1e463384de01463916d21b00e8 label {
+    min-width: 135px;
+}
+#d5f75e1e463384de01463913fa7600e7 label {
+    min-width: 135px;
+}
+#d5f75e1e463384de01463916d21b00e8 select {
+    width: 60px;
+}
+#d5f75e1e463a56ef01463cf101260005 label {
+    margin-bottom: 15px;
+}
+#d5f75e1e463a56ef01463cf101260005 input[type="checkbox"] {
+    height: 15px;
+    position: relative;
+    top: 3px;
+    width: 15px;
+}
+#d5f75e1e46f060b2014715f910590751 input[type="checkbox"], #d5f75e1e46f060b20147161b7ca2076f input[type="checkbox"], #d5f75e1e46f060b20147162059690776 input[type="checkbox"], #d5f75e1e46f060b201473583389707fe input[type="checkbox"] {
+    float: left;
+}
+#d5f75e1e46f060b2014715f910590751 div, #d5f75e1e46f060b20147161b7ca2076f div, #d5f75e1e46f060b20147162059690776 div, #d5f75e1e46f060b201473583389707fe #d5f75e1e46f060b20147163f1b2c0795, #d5f75e1e46f060b201473583389707fe #d5f75e1e46f060b20147163f6f9f0796 {
+    height: 20px;
+}
+#d5f75e1e46f060b2014716400c480797 input, #d5f75e1e46f060b20147164054320798 input {
+    width: 100px;
+}
+#d5f75e1e46f060b2014716400c480797 label, #d5f75e1e46f060b20147164054320798 label {
+    min-width: 420px;
+}
+#d5f75e1e46f060b201471645f785079c input, #d5f75e1e46f060b2014716463150079d input, #d5f75e1e46f060b2014716476a3807a0 input {
+    width: 100px;
+}
+#d5f75e1e46f060b201471645f785079c label, #d5f75e1e46f060b2014716463150079d label {
+    min-width: 225px;
+}
+#d5f75e1e46f060b2014716471f98079f input[type="checkbox"], #d5f75e1e46f060b20147164d005407a8 input[type="checkbox"], #d5f75e1e46f060b20147164dbd6007a9 input[type="checkbox"], #d5f75e1e46f060b20147164e0bcc07aa input[type="checkbox"] {
+    float: left;
+}
+#d5f75e1e46f060b2014716471f98079f, #d5f75e1e46f060b20147164d005407a8, #d5f75e1e46f060b20147164dbd6007a9, #d5f75e1e46f060b20147164e0bcc07aa {
+    height: 20px;
+}
+#d5f75e1e46f060b201471658963c07b7 input[type="checkbox"], #d5f75e1e46f060b201471659a07c07b8 input[type="checkbox"] {
+    float: left;
+}
+#d5f75e1e46f060b201471658963c07b7, #d5f75e1e46f060b201471659a07c07b8 {
+    height: 20px;
+}

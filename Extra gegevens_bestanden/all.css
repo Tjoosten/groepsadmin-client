@@ -1,0 +1,1328 @@
+@import url("ajax.css");
+
+
+
+/* ========================================================= */
+/*  GENERIC ELEMENTS                                         */
+
+body {
+  border-collapse: collapse;
+  font-family: Tahoma, Verdana, Arial, Sans-Serif;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  padding: 0px;
+  text-align: center;
+  width: auto;
+  background-image: url('img/sglogo_748d26_half2_rgb.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-attachment: fixed;
+  background-color: #748d26;
+}
+
+img {
+  border: none;
+  behavior: url('js/iepngfix.htc');     /* png transparancy fix for old IE crap        */
+}                                       /* see http://www.twinhelix.com/css/iepngfix/  */
+
+a {
+  color: rgb(212, 134, 37);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+table {
+  border-collapse: collapse;
+  empty-cells: show;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: nowrap;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+td {
+  font-size: 90%;
+  font-weight: normal;
+  text-align: left;
+  padding-right: 0.3em;
+  padding-left: 0.3em;
+  white-space: nowrap;
+}
+
+th {
+  font-size: 80%;
+  font-weight: bolder;
+  overflow: hidden;
+  color: #000000;
+  border-bottom: 3px solid #748D26;
+  border-top: 3px solid #748D26;
+  text-align: left;
+}
+
+th a {
+  text-decoration: none;
+  color: black;
+}
+
+fieldset {
+  border: 1px solid #eeeeee;
+  margin-bottom: 6px;
+  text-align: center;
+  color: #000000;
+}
+
+legend {
+  color: #000000;
+  font-weight: bold;
+  width: auto;
+}
+
+
+/* ========================================================= */
+/*  LAYOUT-SPECIFIC COMMON ELEMENTS                          */
+
+/* header */
+div.header{
+  background-color: #bdd732;
+  color: white;
+  font-size: 0.9em;
+  font-weight: bold;
+  padding-top: 0.2em;
+  padding-bottom: 0px;
+  text-align: left;
+  width: auto;
+  height: 2.1em;
+}
+
+div.header h1 {
+  background-color: #6a6f34;
+  opacity: 0.75;
+  font-size: 130%;
+  margin: 0;
+  margin-bottom: 0px;
+  padding-right: 15px;
+  text-align: right;
+  color: #ffffff;
+}
+
+div.header h2 {
+  background-color:#6a6f34;
+  opacity:0.75;
+  font-size: 80%;
+  margin: 0;
+  margin-top: 0px;
+  padding-right: 15px;
+  text-align: right;
+}
+
+div.header img {
+  vertical-align: bottom;
+  behavior: url('js/iepngfix.htc');     /* png transparancy fix for old IE crap        */
+}
+
+
+/* submenu & navtab */
+div.header ul.nav {
+/*  background: #748D26; */
+  margin: 5px;
+  margin-bottom: 8px;
+  padding-left: 5px;
+}
+
+div.header ul.nav li {
+  display: inline;
+  font-size: 0.9em;
+  font-weight: bold;
+  list-style: none;
+  margin-left: 0;
+  padding: 3px 15px;
+}
+
+div.header ul.nav li:first-child {
+  padding-left: 0;
+}
+
+div.header ul.nav li a {
+  color: black;
+  text-decoration: none;
+  height: 20px;
+}
+
+div.header ul.nav li a:hover {
+  color: rgb(212, 134, 37);
+  text-decoration: none;
+}
+
+div.header ul.nav li.current a {
+  color: #888;
+  text-decoration: none;
+}
+
+div.header ul.nav li.current a:hover {
+  color: #888;
+  text-decoration: none;
+}
+
+div.header ul.nav a {
+  color: rgb(156, 24, 44);
+}
+
+div.tab_header {
+  text-align: center;
+  margin-left: 5em;
+}
+
+div.tab_header ul{
+  list-style: none;
+  text-align: left;
+  bottom: 0px;
+  width:  auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+div.tab_header li {
+  display: inline;
+  color: #BBBBBB;
+  background-color: #546d06;
+  opacity: 0.75;
+  vertical-align: bottom;
+  margin-right: 0.2em;
+}
+
+div.tab_header li a {
+  text-decoration: none;
+  color: #BBBBBB;
+}
+
+
+div.tab_header li:hover {
+  background-color: #748d26;
+  opacity:0.75;
+}
+div.tab_header li a:hover {
+  color: #ffffff;
+  background-color: #bdd732;
+  opacity:0.75;
+}
+
+
+div.tab_header li.current {
+  font-weight: bold;
+  color: #000000;
+  padding: 5px 5px 0px 5px;
+  background: #DCE2C8 url(img/sglogo_748d26_alpha_rgb2.png) no-repeat fixed right top;
+}
+div.tab_header li.current:hover {
+
+}
+
+div.tab {
+  margin-top: 1em;
+}
+
+div.tab div.nav {
+  color: black;
+  background: #DCE2C8 url(img/sglogo_748d26_alpha_rgb2.png) no-repeat fixed right top;
+  text-align: center;
+  float: right;
+  width: 35%;
+  right: 40px;
+  z-index: 1;
+}
+
+div.nav .current {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+div.tab_header div.nav select option {
+  font-size: 90%;
+}
+
+div.tab div.nav a {
+  color: black;
+  text-decoration: none;
+}
+
+div.tab div.tab_header div.nav a {
+  font-size: 70%;
+  position: relative;
+  text-decoration: underline;
+  z-index: 2000;
+}
+
+div.tab div.tab_header div.nav a.nnext {
+  font-size: 60%;
+  text-transform: uppercase;
+}
+
+div.tab div.tab_header div.nav a.next {
+  font-size: 80%;
+  text-transform: uppercase;
+}
+
+div.tab div.tab_header div.nav a.pprev {
+  font-size: 60%;
+  text-transform: uppercase;
+}
+
+div.tab div.tab_header div.nav a.prev {
+  font-size: 80%;
+  text-transform: uppercase;
+}
+
+div.tab div.tab_header div.nav form {
+  border: none;
+  margin: 0;
+  padding: 0
+}
+
+div.tab div.tab_header ul {
+}
+
+div.tab_page {
+  width: auto;
+  background: #DCE2C8 url(img/sglogo_748d26_alpha_rgb2.png) no-repeat fixed right top;
+}
+
+div.space-line {        /* clearing space div */
+  clear: both;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+}
+
+/* footer */
+div.footer {
+  background-color: #6A6F34;
+  opacity: 0.75;
+  color: #fff;
+  font-size: 0.8em;
+  margin-top: 10px;
+  padding: 3px;
+  text-align: left;
+  color: #000;
+}
+
+div.footer * {
+  color: #000;
+}
+
+div.footer a:hover {
+  text-decoration: none;
+  color: rgb(212, 134, 37);
+}
+
+div.footer div a {
+  color: #ffffff;
+  float: right;
+  margin-right: 10px;
+}
+
+/* info: lidnummer, groep combobox */
+#info {
+  float: right;
+}
+
+#info * {
+  font-size: 120%;
+  font-weight: bold;
+  margin: 0;
+}
+
+#info h2 {
+    text-align: right;
+}
+
+#info h3 {
+  color: #748D26;
+  text-align: right;
+}
+
+#info h4 {
+    text-align: right;
+}
+
+div.tab.old h2.lidnummer {
+  display: none;
+}
+
+/* tab */
+div.tab {
+  margin-left: auto;
+  margin-right: auto;
+  width: 93%;
+}
+
+div.tab fieldset {
+  clear: both;
+}
+
+div.tab div form fieldset legend {
+}
+
+div.tab div form.entry fieldset legend {
+  color: black;
+  font-weight: bold;
+  padding: 2px 2px;
+  margin-left: 10em;
+}
+
+.legend {
+  color: #ffffff;
+  font-weight: bold;
+  padding-top: 5px;
+  text-transform: uppercase;
+}
+
+div.tab div form.list fieldset div.legend {
+  clear: both;
+  margin: 0px 10px;
+  padding: 5px;
+}
+
+/* alert tip,warning */
+#alert, #subalert {
+  display: block;
+  width: auto;
+  margin: 0px;
+  padding: 0px;
+}
+
+#alert li, #subalert li {
+  width: auto;
+  background-position: left center;
+  background-repeat: no-repeat;
+  behavior: url('js/iepngfix.htc');
+  padding-top:    4px;
+  padding-bottom: 4px;
+  list-style-type: none;
+  text-align: left;
+  padding-left: 30px;
+}
+
+#alert li.error, #subalert li.error {
+  background-image: url("img/important_s.png");
+  color: #ffbe39;
+  background-color: #cc7e27;
+}
+
+#alert li.error a, #subalert li.error a {
+  color: #ffbe39;
+  text-decoration: underline;
+}
+
+#alert li.info, #subalert li.info {
+  background-image: url("img/tip_s.png");
+  color: #ffffff;
+  background-color: #999999;
+}
+
+#alert li.info a, #subalert li.info a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* misc */
+.list a {
+  color: black;
+}
+
+span.delete {
+  display: inline-block;
+  width:  20px;
+  height: 16px;
+  margin: 0pt;
+  /* padding: 0pt 2px; */
+  white-space: nowrap;
+  margin-right: 5px;
+}
+
+span.delete a {
+  background: url('img/delete.png') 0px -16px no-repeat;
+  display: inline-block;
+  height: 16px;
+  width:  16px;
+}
+
+span.delete a:hover {
+  background: url('img/delete.png') 0px 0px no-repeat;
+  _background: url('img/delete.png') 0px -16px no-repeat;
+  text-decoration: none;
+}
+
+table.col2 {
+  border: none;
+  width: 90%;
+}
+
+td.label {
+  text-align: right;
+  vertical-align: top;
+  padding-right: 2em;
+  width: 40%;
+}
+
+td.input {
+  text-align: left;
+  margin-left: 2em;
+  text-transform: uppercase;
+}
+
+div.button {
+  width: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+input.button,button {
+  height: 25px;
+  font-size: 1em;
+  vertical-align: middle;
+  font-weight: bolder;
+  text-align: center;
+  color: #000000;
+  background: #EDEDED url(img/bg_button_g.png) repeat-x;
+  padding: 1px;
+  border: outset 2px #BEBEBE;
+  cursor: pointer;
+}
+
+input.button:hover {
+  background-image: url(img/bg_button_g_hover.png);
+  border-style: inset;
+  color: #3D3D3D;
+}
+
+input.button:active {
+  background-image: url(img/bg_button_g_hover.png);
+  border-style: inset;
+  color: rgb(212, 134, 37);
+}
+
+/* modal pseudo-popup, used for filternaam & etiketnaam*/
+#mbox {
+  background-color:#bdd732;
+  opacity:0.75;
+  padding:8px;
+  border:2px outset #666;
+}
+
+/*
+#mbd {
+  font-family:sans-serif;
+  font-weight:bold;
+  float:right;
+  padding-bottom:5px;
+}
+ */
+
+#ol {           /* semi-transparant overlay */
+  background-image: url("img/overlay.png");
+}
+
+.dialog {
+  display: none;
+}
+
+* html #ol {
+  background-image:none;
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/overlay.png", sizingMethod="scale");
+}
+
+
+.form-required {
+color:#CC0000;
+}
+
+/* ========================================================= */
+/*  FIELDS                                                   */
+
+#_bus,#bus {
+  width: 4em;
+}
+
+#_dimensieH,#dimensieV,#tussenruimteH,#tussenruimteV,#Topmarge,#Kantmarge,#Kantmarge,#Blanco {
+  width: 3em;
+}
+
+#_email,#email {
+  width: 15em;
+  text-transform: lowercase;
+}
+
+#emailVan,#emailReplyTo,#emailBcc {
+  width: 15em;
+}
+
+#emailTitel {
+  width: 30em;
+}
+
+#_gemeente,#gemeente {
+  width: 15em;
+  text-transform: uppercase;
+}
+
+#_gisstraat,#gisstraat {
+  width: 25em;
+  text-transform: uppercase;
+}
+
+#_nr,#nr {
+  width: 4em;
+}
+
+#_omschrijving {
+  width: 15em;
+}
+
+#_waardes {
+  width: 15em;
+}
+
+#_oprichtingsdatum,#oprichtingsdatum {
+  margin-right: 8px;
+  width: 7em;
+}
+
+#_postcode,#postcode {
+  width: 4em;
+}
+
+#_rekeningnummer,#rekeningnummer,#contact_gegevens_reknr {
+  width: 24em;
+  margin: 2px;
+}
+
+#_email,#email {
+    width: 16em;
+    margin: 2px;
+}
+
+#_straat,#straat {
+  width: 15em;
+  text-transform: uppercase;
+}
+
+#_web,#web {
+  width: 20em;
+  text-transform: lowercase;
+}
+
+#_woonplaats,#woonplaats{
+  width: 15em;
+  text-transform: uppercase;
+}
+
+
+/* ========================================================= */
+/*  PAGE SPECIFIC ELEMENTS                                   */
+
+
+/* src.1.TContentMembersList_OUTPUT.jsp */
+
+.mid{
+    width: 500px;
+    text-align:center;
+    margin: auto;
+}
+.left{
+    float: left;
+    width: 480px;
+    display: block;
+}
+.right{
+    float: right;
+}
+
+.clipped {      /* to hide overflow of long th's for small column; doesnt work on IE */
+  width: 5px;
+  word-wrap: normal;
+  white-space: nowrap;
+  overflow: visible;
+}
+
+span.recordbrowser {
+    float: right;
+    color: #555555;
+}
+span.recordbrowser img {
+    vertical-align: bottom;
+}
+
+#snelzoeker {
+    color: black;
+    float: right;
+    font-size: 0.8em;
+    margin: 2px 0.6em;
+    padding-left: 15px;
+}
+#snelzoeker img {
+    vertical-align: bottom;
+}
+
+#snelzoeker input {
+    width: 15em;
+}
+
+table.lid_overview {
+    background-color: #ffffff;
+    background: #DCE2C8 url(img/sglogo_748d26_alpha_rgb2.png) no-repeat fixed right top;
+}
+
+th.lid {
+    border-bottom: 3px solid #748D26;
+}
+
+tr.lid {
+  width: auto;
+  border-bottom:1px solid #748D26;
+  font-size: 80%;
+  margin: 0;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+tr.lid:hover {
+  background-color: #748D26;
+  opacity:0.75;
+  color: #BDD732;
+}
+
+tr.lid a {
+  color: #000000;
+}
+
+h2.lidnummer {
+  text-align: right;
+}
+.old td.Lidnummer {
+  visibility: hidden;  /* hide Lidnummer oud-leden */
+}
+
+tr.old td,tr.old td a  {
+  font-style: italic;
+  color: #888888;
+}
+
+tr.old:hover {
+  background: #DCE2C8 url(img/sglogo_748d26_alpha_rgb2.png) no-repeat fixed right top;
+  color: #ff0000;
+}
+
+tr.geblokkeerd, tr.geblokkeerd a {      /* lid met geblokkeerd adres */
+  color: rgb(160, 92, 240);
+}
+
+th.geboortedatum {
+  width: 20px;
+  overflow: hidden;
+}
+
+td.lidgeld-niet-betaald{
+  background-image: url(img/euro_16.png);
+  background-repeat: no-repeat;
+  height: 16px;
+  width:16px;
+}
+
+/* filter/recordbrowser bar */
+.filterbar {
+  background: #bdd732;
+  color: black;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 5px;
+  font-size: 90%;
+  border: none;
+  border-top: solid 1px #B5BA8E;
+}
+
+.filterbar a {
+  color: #000000;
+}
+
+.filterbar a:hover {
+  text-decoration: none;
+  color: rgb(212, 134, 37);
+}
+
+.filterbar img {
+  vertical-align: bottom;
+}
+
+.filterbar .filter {
+  float: left;
+  display: inline;
+  margin: 0;
+  padding: 0 2px;
+}
+
+/* src.2.TContentMembersEntry_OUTPUT.jsp */
+.tab_page #korte-info{
+  text-align: right;
+  padding-right: 15px;
+  padding-top: 15px;
+}
+
+.tab_page #laatste-aanpassing{
+  margin-bottom: 1em
+}
+
+ul.ui-autocomplete.ui-menu{
+    width:25em;
+    text-align: left;
+    list-style-type: none;
+    background-color: #bdd732;
+}
+
+ul.ui-autocomplete.ui-menu li a {
+    color: black !important;
+}
+
+#filter_sluiten {
+    float: right;
+    margin: 5px 10px;
+    background: url(img/close.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    text-indent: -1000em;
+}
+
+#filter_sluiten:hover {
+    background-position: 1px 1px;
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+    background: lightgray;
+    border: none;
+    color:#000;
+    border-radius:0;
+    font-weight: normal;
+}
+
+input.error {
+    border: 1px dotted red;
+}
+
+label.error {
+    color: red;
+    margin-left: 1em;
+}
+
+#ol{
+  display: none;
+  position: absolute;
+  top: 0pt;
+  left: 0pt;
+  z-index: 998;
+  width: 100%;
+}
+
+#mbox{
+  display: none;
+  position: absolute;
+  z-index: 999;
+}
+
+#adresbeheer_link,#functiehistoriek,#back {             /* 'geavanceerd adresbeheer', 'functiehistoriek', 'terug'  link */
+  font-size: 90%;
+  color: rgb(212, 134, 37);
+  margin-right: 10%;
+}
+
+div.assistent {                 /* 'Adjunct' checkbox  */
+  position: relative;
+  right: 100px;
+}
+
+.geblokkeerd .geblokkeerd-info {
+  text-align: left;
+}
+
+.row .lidgeld-betaald, .row .lidgeld-niet-betaald {
+  background-position: 0.3em center;
+}
+
+.adres-blok{
+  width: 729px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #bdd732;
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-style: none;
+  position: relative;
+  top: -5px;
+  background-color: #dce2c8;
+  margin: auto;
+}
+
+.adres-blok-header{
+  width: 715px;
+  height: 27px;
+  background-color: #bdd732;
+  background-position: 565px 11px;
+  padding-left: 15px;
+  padding-top: 7px;
+  margin-top: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: left;
+  cursor: pointer;
+}
+
+.adres-blok-header img{
+  float: right;
+  margin-right: 10px;
+}
+
+.adres-blok td.label {
+  width: 150px;
+}
+
+.adres-blok #_land,
+.adres-blok .woonplaats,
+.adres-blok #_gisstraat,
+.adres-blok #_huistelefoon{
+  width: 15em;
+}
+
+.adres-blok #_nummer,
+.adres-blok #_bus{
+  width: 4em;
+}
+
+.contacten input[type=text]{
+  width: 15em;
+}
+
+.contact-blok{
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.contact-blok table.col2,
+.contact-blok .label{
+  width: inherit;
+}
+
+/* src.10.TContentFilter.jsp */
+/* src.11.TContentGroupsEntry_OUTPUT.jsp */
+/* src.11.non-adreszoeker.TContentGroupsEntry_OUTPUT.jsp */
+/* src.12.TContentRowSelector.jsp */
+#kolommenfieldset ul {
+  text-align: left;
+  text-transform: capitalize;
+}
+
+#kolommenfieldset li {          /* kolomnamen in filtersettings->kolommen */
+  margin-left: 35%;
+  width: 15em;
+  text-align: left;
+  list-style-type: none;
+}
+
+/* src.13.header.jsp */
+/* src.14.afdrukken_downloaden.jsp */
+
+/* src.15.etiketten.jsp */
+ul#veldnamen {                          /* pseudo-listbox met template-veldnamen voor opvullen content o.m. etiketten en email */
+  border: solid 1px;
+  display: block;
+  height: 8em;
+  overflow: auto;
+  padding: 0;
+  text-align: left;
+  width: 12em;
+  text-transform: capitalize;
+  background-color: #ffffff;
+  /* float: left;
+  margin-left: 15%; */
+}
+
+
+#veldnamen li {                         /* pseudo-listbox met template-veldnamen voor opvullen content o.m. etiketten en email */
+  cursor: pointer;
+  display: block;
+  margin: 0;
+  padding: 2px;
+  text-transform: capitalize;
+}
+
+#veldnamen li:hover {
+  background-color: rgb(212, 134, 37);
+  color: #ffffff;
+}
+
+#etiketvoorbeeld {
+  background: url(img/etiket.png);
+  border: 4px solid #888888;
+  height: 200px;
+  width: 280px;
+  float: left;
+  margin-left:15%;
+}
+
+fieldset#etiketinhoud, fieldset#emailinhoud {
+  text-align: left;
+}
+
+textarea#_etiketinhoud {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  font-size:1.5em;
+  margin-left: 30px;
+}
+
+/* src.16.TSortOrderSelector.jsp */
+
+/* src.4.TContentFunctionsEntry_OUTPUT.jsp */
+td.tot a {
+  color: #ff0000;
+  text-decoration: underline;
+}
+/* src.5.TContentMemberAdressesEntry_OUTPUT.jsp */
+/* src.5.tab.TContentMemberAdressesEntry_OUTPUT.jsp */
+/* src.7.TExtraFieldsList_OUTPUT.jsp */
+/* src.8.TContentExtraEntry_OUTPUT.jsp */
+/* src.9.TNietVVKSMFunctiesList_OUTPUT.jsp */
+/* src.9.alias.TNietVVKSMFunctiesList_OUTPUT.jsp */
+/* src.12.TContentRowSelector.jsp */
+
+.list a {
+  display: inline-block;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
+.list a.op {
+  height: 16px;
+  width:  16px;
+  background: url('img/go-up.png') no-repeat;
+  _behavior: url('js/iepngfix.htc');     /* png transparancy fix for old IE crap        */
+}
+
+.list a.neer {
+  height: 16px;
+  width:  16px;
+  background: url('img/go-down.png') no-repeat;
+  _behavior: url('js/iepngfix.htc');     /* png transparancy fix for old IE crap        */
+}
+
+.list a:hover {
+  text-decoration: none;
+}
+
+/* admin-console-sync-results.jsp */
+/* admin-console-sync.jsp */
+/* admin-console.jsp */
+/* ajax.jsp */
+/* console.jsp */
+/* email-verzenden.jsp */
+/* email.jsp */
+/* fakturatie-groepen.jsp */
+/* footer.jsp */
+/* groepsoverzicht.jsp */
+span#groeps_gegevens img {
+  vertical-align: middle;
+}
+
+/* orakel.jsp */
+#no-svg {
+  font-size:150%;
+  margin: 10px 40px;
+  border: solid 2px red;
+  background-color:white;
+}
+.mod-svg #no-svg { display:none; }
+
+
+/* ========================================================= */
+/* menubalk                                                  */
+
+/* Algemene CSS voor elke screensize */
+
+body{
+    margin-top: 25px !important; /* idem als height van globale_menubalk */
+}
+
+div.globale_menubalk #items #item_sgv,
+div.globale_menubalk #items #item_facebook,
+div.globale_menubalk #items #item_twitter{
+    display:inline-block;
+    height:15px;
+    width:15px;
+    text-indent:-99999px;
+    margin-top:2px;
+    background-repeat:no-repeat;
+}
+
+div.globale_menubalk #items #item_sgv{
+    background-image:url('https://www.scoutsengidsenvlaanderen.be/files/algemeen/menubalk/balk_sprites_sgv.png');
+}
+
+div.globale_menubalk #account span,
+div.globale_menubalk #account #item_help,
+div.globale_menubalk #account #item_instellingen,
+div.globale_menubalk #account #item_afmelden{
+    float:left;
+}
+
+div.globale_menubalk #account #item_help,
+div.globale_menubalk #account #item_instellingen,
+div.globale_menubalk #account #item_afmelden{
+    display:inline-block;
+    height:20px;
+    width:20px;
+    text-indent:-99999px;
+
+    background-image:url('https://www.scoutsengidsenvlaanderen.be/files/algemeen/menubalk/balk_sprite_account.png');
+    margin-top: 2px;
+}
+
+div.globale_menubalk #items #item_twitter,
+div.globale_menubalk #items #item_facebook,
+div.globale_menubalk #account #item_help{               background-position:0 0;}
+div.globale_menubalk #items #item_twitter:hover,
+div.globale_menubalk #items #item_facebook:hover{       background-position:0 -15px;}
+
+div.globale_menubalk #account #item_help:hover{         background-position:0px -20px;}
+
+div.globale_menubalk #account #item_instellingen{       background-position:-20px 0;}
+div.globale_menubalk #account #item_instellingen:hover{ background-position:-20px -20px;}
+
+div.globale_menubalk #account #item_afmelden{           background-position:-40px 0;}
+div.globale_menubalk #account #item_afmelden:hover{     background-position:-40px -20px;}
+
+div.globale_menubalk{
+    position:absolute;
+    top: 0;
+    height: 25px; /* idem als margin-top van body */
+    width: 100%;
+    z-index: 1000;
+    background:#246b8c;
+    color: white;
+    font-size: 9pt;
+    font-weight: bold;
+}
+
+div.globale_menubalk #items li{
+    float: left;
+    list-style-type: none;
+    line-height: 19px;
+    margin: 0 15px 0 0;
+}
+
+div.globale_menubalk .item_link,
+div.globale_menubalk #items a{
+    color:#accbd9;
+    -webkit-transition: color .25s linear;
+    transition: color .25s linear;
+}
+
+div.globale_menubalk .item_link:hover,
+div.globale_menubalk #items a:hover{
+    color:#FFF;
+    text-decoration:none;
+    -webkit-transition: color .25s linear;
+    transition: color .25s linear;
+}
+
+/* Verbergen van tekst items wegens te groot */
+div.globale_menubalk #items .menu_item{
+    display:none;
+}
+
+div.globale_menubalk #account{
+    line-height: 25px;
+    margin-right:10px;
+    float:right;
+}
+
+div.globale_menubalk #items{
+    margin-top:3px;
+}
+
+div.globale_menubalk #account{
+}
+
+div.globale_menubalk #items .activesite{
+    color:#FFF;
+}
+
+div.globale_menubalk a{
+    color: white;
+}
+
+div.globale_menubalk #items{
+    margin-left:10px;
+    float:left;
+    padding:0;
+}
+
+div.globale_menubalk #account #item_aanmelden,
+div.globale_menubalk #account #item_username{
+    margin-right:10px;
+}
+
+div.globale_menubalk #account #item_instellingen,
+div.globale_menubalk #account #item_afmelden{
+    margin-left:4px;
+}
+
+
+#login-form {
+    position:absolute;
+    top:29px;
+    right:0px;
+    z-index: 1;
+
+    height:50px;
+    width:416px;
+
+    background-color:#246b8c;
+    padding: 10px 10px 0 10px;
+    -moz-border-radius: 0px 0px 6px 6px;
+    -webkit-border-radius: 0px 0px 6px 6px;
+    border-radius: 0px 0px 6px 6px;
+    behavior: url(/sites/all/themes/zen_ninesixty_sgv_d6/scripts/PIE.htc);
+    -moz-box-shadow: 0 5px 10px -7px #000000;
+    -webkit-box-shadow: 0 5px 10px -7px #000000;
+    box-shadow: 0 5px 10px -7px #000000;
+}
+
+#login-form input[type=text], #login-form input[type=password] {
+    background-color: #ffffff;
+    border: #FFF solid 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 1.2em;
+    height: 16px;
+    width: 140px;
+    float:left;
+}
+
+#login-form form input[type=submit] {
+    border: 0;
+    height: 23px;
+    width: 70px;
+    margin-top:15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size:12px;
+}
+
+#login-form label{
+    height: 50px;
+    width: 160px;
+    display: block;
+    float: left;
+    color:white;
+    font-size:12px;
+    font-weight:bold;
+}
+
+#login-form label input{
+    color:black;
+    font-weight:normal;
+}
+
+div.globale_menubalk input{
+    display: inline;
+    color: black;
+    height: 15px;
+    font-weight: normal;
+}
+
+div.globale_menubalk .globale_menubalk_submit{
+    margin-right: 10px;
+    height: 25px;
+    width: 100px;
+    background-image: url('//www.scoutsengidsenvlaanderen.be/sites/all/themes/zen_ninesixty_sgv_d6/images/SGV_login-24x32.png');
+    background-repeat: no-repeat;
+    background-position: 5px;
+    text-align: right;
+}
+
+/* Custom CSS voor GA */
+
+div.globale_menubalk #items a[href^="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin"]{
+    color:#FFF;
+}
+
+/* CKEditor */
+
+.cke_panel {
+    width: auto !important;
+}
+
+.cke_skin_kama .cke_panel.cke_rcombopanel iframe {
+    width: 120px;
+}
+
+.cke_skin_kama .cke_rcombo .cke_ga_velden .cke_text,
+.cke_skin_kama .cke_panel iframe[title='ga_velden'] {
+    width: 250px ;
+}
+
+/* Hier veronderstellen we een desktop scherm (of voldoende groot voor normale layout) */
+@media screen and (min-width:930px){
+
+    div.globale_menubalk{
+        position: absolute;
+        top: 0;
+        height: 25px; /* idem als margin-top van body */
+        width: 100%;
+        z-index: 1000;
+        background:#246b8c;
+        color: white;
+        font-size: 9pt;
+        font-weight: bold;
+        vertical-align: middle;
+    }
+
+    div.globale_menubalk #items{
+        margin-left:10px;
+        float:left;
+        padding:0;
+    }
+
+    div.globale_menubalk #items .menu_item{
+        display:inline;
+    }
+
+    div.globale_menubalk #items img{
+        padding-bottom:5px;
+    }
+}
+
+/* Hier veronderstellen we een klein scherm */
+@media screen and (max-width:460px){
+    #login-form {
+        width: 155px;
+        height: 150px;
+    }
+
+    #login-form form input[type=submit] {
+        height: 30px;
+        width: 154px;
+        margin-top: 10px;
+    }
+
+    }
+}
