@@ -15,13 +15,19 @@
       templateUrl: 'partials/leden.html',
       controller: 'LedenlijstController'
     })
+    // Lid toevoegen
+    .when('/lid/toevoegen', {
+      templateUrl: 'partials/lid-toevoegen.html',
+      controller: 'LidToevoegenController'
+    })
+      .otherwise({
+      redirectTo: '/'
+    })
+
     // Lid detailpagina
       .when('/lid/:id', {
       templateUrl: 'partials/lid.html',
       controller: 'LidController'
-    })
-      .otherwise({
-      redirectTo: '/'
     });
 
     //$locationProvider.html5Mode(true).hashPrefix('!');
