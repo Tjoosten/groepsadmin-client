@@ -8,13 +8,18 @@
     'ga.services.alert',
     'ga.ledenlijstcontroller',
     'ga.lidcontroller',
+    'ga.usercontroller',
+    'ga.lidtoevoegencontroller',
     'ga.lid.velden',
+    'ga.dynamischveld',
+    'ga.dynamischevelden',
     'ga.searchcontroller',
-    'ga.typeahead',
     'ga.ui.selectpicker',
     'ga.ui.alert',
+    'ga.ui.dialog',
     'ui.bootstrap',
-    'ga.utils'
+    'ga.utils',
+    'infinite-scroll'
   ]);
 
 
@@ -30,6 +35,9 @@
         }
       }
     }])
+  angular.module('ga').factory('keycloak', function($window) {
+    return $window._keycloak;
+  });
   /*
 .filter("mydate", function() {
     var re = /\\\/Date\(([0-9]*)\)\\\//;

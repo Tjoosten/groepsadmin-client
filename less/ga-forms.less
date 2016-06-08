@@ -17,10 +17,24 @@
 
 fieldset {
   margin-bottom: 2em;
+  fieldset {
+    margin-bottom: 0;
+    legend {
+      text-transform: capitalize;
+      border-bottom: 1px solid @gray-lighter;
+      font-size: @font-size-base;
+      cursor: pointer;
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none;   /* Chrome/Safari/Opera */
+      -moz-user-select: none;      /* Firefox */
+      -ms-user-select: none;       /* IE/Edge */
+      user-select: none;
+    }
+  }
 }
 
 legend {
-  font-size: @font-size-base;
+  font-size: floor((@font-size-base * 1.20));
   font-weight: 700;
   text-transform: uppercase;
   color: @gray-semi-dark;
@@ -36,6 +50,15 @@ legend {
 
 .bootstrap-select {
   margin: 0 !important;
+}
+
+.ga-form-group{
+  padding-left: 20px;
+}
+
+.ga-form-beschrijving{
+  font-weight: normal;
+  clear: both;
 }
 
 
@@ -124,6 +147,7 @@ legend {
     float: left;
     width: 100%;
     border-bottom: 1px solid #e0e0e0;
+
     .transition(~"background-color ease-in-out .15s");
 
     // Note: the following block could be simplified if IE8 supported the ':not()' pseudo-class
@@ -144,6 +168,9 @@ legend {
       }
     }
   }
+  .ga-functie-list {
+    padding-left: 20px;
+  }
 
   .control-label {
     margin: 1px 0 2px;
@@ -159,22 +186,34 @@ legend {
     border: 1px solid transparent;
     box-shadow: none;
 
-    &:focus {
-      border: 1px solid @input-border;
-      border-radius: @input-border-radius;
-      box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
-    }
+    // Disabled and read-only fields
+      &:focus {
+        border: 1px solid @input-border;
+        border-radius: @input-border-radius;
+        box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+      }
+
 
     // Disabled and read-only fields
     &[disabled],
     &[readonly] {
-      background-color: @panel-bg;
+      background-color: transparent;
+      cursor: default;
+      box-shadow: none;
+      border: 1px solid transparent;
+      &:hover {
+        background-color: transparent;
+        box-shadow: none;
+        border: 1px solid transparent;
+        border-radius: @input-border-radius;
+      }
 
       &:focus {
         border-color: transparent;
         box-shadow: none;
       }
     }
+
   }
   
   .control-indicator,

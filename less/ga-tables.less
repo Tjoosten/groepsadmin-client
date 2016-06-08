@@ -10,6 +10,41 @@
   cursor: pointer;
 }
 
+#leden tr td{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.sort{
+  color: #ccc;
+  font-size: 10px;
+  &:first-child{
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+  &:hover{
+    color: black;
+  }
+}
+.first-sort, .second-sort, .third-sort, {
+  color: #5c7b44;
+  &:hover{
+    color: #5c7b44;
+  }
+}
+
+.first-sort{
+  font-size: 18px;
+}
+.second-sort{
+  font-size: 14px;
+}
+.third-sort{
+  font-size: 10px;
+}
+
+
+
 @media screen and (max-width: 640px) {
   #leden {
     border: 0;
@@ -102,7 +137,11 @@
   }
 }
 
-
+.placeholder-kolom-kop{
+  height: 1.5em;
+  line-height: 1.2em;
+  background: #A9C593;
+}
 @media screen and (max-width: 400px) {
   #leden {
     td:nth-child(-n+3) {

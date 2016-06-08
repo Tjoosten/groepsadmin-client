@@ -1,5 +1,12 @@
 # REST API Documentatie
-## Endpoints
+
+* [Overzicht endpoints](#overzicht-endpoints)
+* [Algemeen](#algemeen)
+* [Eindpunten](#eindpunten)
+* [Errors](#errors)
+* [Meer lezen](#meer-lezen)
+
+## Overzicht endpoints
 
 De API heeft de volgende eindpunten:
 
@@ -12,12 +19,13 @@ De API heeft de volgende eindpunten:
 | *[/groep](#groep)*                                          | OK    | -      | -       | -        | -     |
 | *[/groep/{groepsnummer}](#groepgroepsnummer)*               | OK    | -      | OK      | -        | -     |
 | *[/functie](#functie)*                                      | OK*   | OK     | -       | -        | -     |
-| *[/functie?{query-string}](#functiequerystring)*            | OK    | -      | -       | -        | -     |
+| *[/functie?{query-string}](#functiequery-string)*           | OK    | -      | -       | -        | -     |
 | *[/functie/{functieid}](#functiefunctieid)*                 | OK    | -      | OK      | OK       | -     |
-| *[/ledenlijst](#ledenlijst)*                                | NOK   | -      | -       | -        | -     |
-| *[/ledenlijst/filter](#ledenlijstfilter)*                   | NOK   | NOK    | -       | -        | -     |
-| *[/ledenlijst/filter/{filterid}](#ledenlijstfilterfilterid)*| NOK  | -      | NOK     | NOK      | NOK   |
+| *[/ledenlijst](#ledenlijst)*                                | OK    | -      | -       | -        | -     |
+| *[/ledenlijst/filter](#ledenlijstfilter)*                   | OK    | NOK    | -       | -        | -     |
+| *[/ledenlijst/filter/{filterid}](#ledenlijstfilterfilterid)*| OK    | -      | NOK     | NOK      | NOK   |
 | *[/ledenlijst/kolom-type](#ledenlijstkolom-type)*           | NOK   | -      | -       | -        | -     |
+| *[/zoeken](#zoeken)*               | NOK   | -      | -       | -        | -     |
 
  * Imperformante request
 
@@ -146,39 +154,63 @@ Een specifiek lid
         }]
       }
   ],
-  "groepseigen": [
-    {
-      "groep": "A3143G",
-      "gegevens": [
-        {
-          "id": "d5f75e233f7d1ccc013f9e3c6a0909f7",
-          "naam": "Gaat mee op Weekend",
-          "type": "vinkje",
-          "waarde": true,
-          "schrijfbaar": true,
+  "groepseigenVelden": {
+        "A1301G": {
+            "schema": [],
+            "waarden": {}
         },
-        {
-          "id": "dd5f75e233f7d1ccc013f9e3c6a0909f7",
-          "naam": "E-mail ouder",
-          "type": "email",
-          "waarde": "",
-          "schrijfbaar": true,
-        },
-        {
-          "id": "d5f75e233f7d1ccc013f9e3c6a0909f7",
-          "naam": "lievelingskleur",
-          "type": "lijst",
-          "keuze": ["groen", "rood", "blauw"],
-          "schrijfbaar": false,
-        },
-      ],      
-      "links": [{
-        "href": "http://ga.sgv.be/rest/groep/A3143G",
-        "rel": "groep",
-        "method": "GET"
-      }]
+        "O1504G": {
+            "schema": [
+                {
+                    "links": [],
+                    "id": "d5f75b320dc7de39010dca243a830129",
+                    "aangepast": "2016-03-10T12:36:45.132+01:00",
+                    "type": "tekst",
+                    "label": "Opmerkingen",
+                    "beschrijving": "",
+                    "kanLeidingWijzigen": false,
+                    "verplicht": false,
+                    "kanLidWijzigen": false,
+                    "sort": 0,
+                    "deletedTimestamp": "2016-03-10T12:36:45.132+01:00"
+                },
+                {
+                    "links": [],
+                    "id": "d5f75e2340fc9dac014102187b4e2a68",
+                    "aangepast": "2016-03-10T12:36:45.132+01:00",
+                    "type": "vinkje",
+                    "label": "helpen op evenementen",
+                    "beschrijving": "",
+                    "kanLeidingWijzigen": false,
+                    "verplicht": false,
+                    "kanLidWijzigen": false,
+                    "sort": 0,
+                    "deletedTimestamp": "2016-03-10T12:36:45.132+01:00"
+                },
+                {
+                    "links": [],
+                    "id": "40288144535b694a01535b6adb2c0003",
+                    "aangepast": "2016-03-10T12:36:45.132+01:00",
+                    "type": "lijst",
+                    "label": "Dit is een lijst",
+                    "kanLeidingWijzigen": false,
+                    "verplicht": false,
+                    "kanLidWijzigen": false,
+                    "sort": 0,
+                    "keuzes": [
+                        "Lijstwaarde1",
+                        "Lijstwaarde2"
+                    ],
+                    "deletedTimestamp": "2016-03-10T12:36:45.132+01:00"
+                }
+            ],
+            "waarden": {
+                "d5f75b320dc7de39010dca243a830129": "",
+                "d5f75e2340fc9dac014102187b4e2a68": "true",
+                "40288144535b694a01535b6adb2c0003": "Lijswaarde1"
+            }
+        }
     }
-  ],
   "links": [
     {
       "rel": "self",
@@ -188,7 +220,7 @@ Een specifiek lid
       "rel": "update",
       "href": "https://ga.sgv.be/rest/lid/d5f75b320b812440010b8127f95f4db4",
       "method": "PATCH",
-      "secties": ["persoonsgegevens", "adressen", "email", "functies.A3143G", "groepseigen"]
+      "secties": ["persoonsgegevens", "gebruikersnaam", "vgagegevens", "adressen", "email", "functies.A3143G", "groepseigenVelden.A1301G"]
     }, { //Indien lid vanuit filter opgeroepen werd en er dus een vorig en volgend lid mogelijk is
       "rel": "prev",
       "href": "https://ga.sgv.be/rest/lid/d5f75b320b812440010b8127f95f4db4?positie=acme",
@@ -201,9 +233,19 @@ Een specifiek lid
   ]
 }
 ```
-
 * Bij samengevoegde leden zullen beide lid-id's blijven werken, en naar dezelfde resource leiden (waarschijnlijk redirect).
 * Een andere mogelijkheid is om elke sectie van deze resource te splitsen in kleinere secties.  (*lid/{lidid}/persoonsgegevens*).  Dit is makkelijker op de server kant, maar heb het gevoel dat op de client zijde dit dingen vermoeilijkt (of niet?).
+
+###### Link secties
+Deze secties bepalen welke onderdelen van het lid aangepast kunnen worden door de huidige gebruiker.
+`persoonsgegevens` : Algemene persoonsgegevens
+`gebruikersnaam` : de gebruikersnaam van het lid
+`vgagegevens` : velden: "Persoon met beperking" en "Verminderd lidgeld"
+`email` : het emailadres van het lid
+`adressen` : de adressen van het lid
+`contacten` : de contacten van het lid
+`functies.A1301G` : de functies van het lid in de groep met groepsnummer A1301G (zowel groepseigenfuncties als verbondsfuncties)
+`groepseigenVelden.A1301G` : de groepseigenvelden van het lid de groep met groepsnummer A1301G
 
 #### PATCH
 Updaten van een lid
@@ -231,8 +273,9 @@ Een beschrijving per sectie wat kan en mag:
 ###### functie-instanties
 Een functie-instantie heeft geen `id` veld.  Het wordt uniek gekenmerkt door de combinatie van de velden `functie`, `groep` en `begin`.
 
-* Functie-instantie toevoegen == een functie-instatie toevoegen met `begin` != `null`.  Deze zal door de server worden ingevuld op de huidige timestamp.
+* Functie-instantie toevoegen == een functie-instatie toevoegen met `begin` != `null`.  Deze zal door de server worden ingevuld op de huidige timestamp maar je geeft best een datetime mee.
 * Functie-instantie stopzetten == een bestaande niet beeindigde functie-instantie opladen met `einde` != `null`.  Je mag dus datum invullen, maar de server zal hier geen rekening mee houden.
+* Om te bevestigen dat de Functie-instantie stopgezet wordt moeten we een parameter `bevestig` met daarin een boolean toevoegen aan de request URL.
 * Er word dus enkel naar de combinatie van `functie`, `groep` en `begin` gekeken.  Alle andere velden worden genegeerd.  Je bent dus niet verplicht om telkens alle functies terug te sturen naar de server als je er een enkele wil aanpassen.
 
 ###### groepseigen
@@ -240,6 +283,7 @@ Een functie-instantie heeft geen `id` veld.  Het wordt uniek gekenmerkt door de 
 * Er wordt enkel gekeken naar het `id` veld en het `waarde` veld.  Alle andere velden worden genegeerd.
 * Een niet schrijfbaar dat toch opgeladen wordt, wordt genegeerd.
 * Als een gegeven niet opgeladen wordt wordt het als onveranderd beschouwd.
+* Meer info over de eigenschappen van groepseigen velden kan gevonden worden in de [dynamischevelden documentatie](dynamische_velden.md)
 
 ##### Response
 Een redirect naar het nieuwe lid of error
@@ -361,40 +405,53 @@ Alle groepen waar je toegang toe hebt:
             ]
         }
     ],
-    "groepseigenGegevens": [
-        {
-         "type" : "vinkje",
-         "label" : "Een vinkje",
-         "beschrijving" : "Dit is een vinkje dat je <strong>aan</strong> of uit mag klikken",
-         "meer-info" : "<i>NOG</i> meer info",
-         "id" : "c4ca4238a0b923820dcc509a6f75849b"
-      },
-      {
-         "type" : "groep",
-         "label" : "titel/label van de groep",
-         "beschrijving" : "Al deze velden horen bij elkaar",
-         "velden" : [
-            {
-               "type" : "tekst",
-               "id" : "c81e728d9d4c2f636f067f89cc14862c",
-               "label": "tekst veld"
-            },
-            {
-                "type" : "keuze",
-                "id": "eccbc87e4b5ce2fe28308fd9f2a7baf3",
-                "label": "keuze veld",
-                "keuzes": [
-                    {
-                        "id": "5bd15ca24cee57242a9b28b79481da6d",
-                        "label": "Een keuze"   
-                    }, ...
-                ]
-            }
-            , ...
-         ]
-      }
-      , ...
-    ],
+    "groepseigenGegevens": {
+        "schema": [
+                {
+                    "links": [],
+                    "id": "d5f75b320dc7de39010dca243a830129",
+                    "aangepast": "2016-03-10T12:36:45.132+01:00",
+                    "type": "tekst",
+                    "label": "Opmerkingen",
+                    "beschrijving": "",
+                    "kanLeidingWijzigen": false,
+                    "verplicht": false,
+                    "kanLidWijzigen": false,
+                    "sort": 0,
+                    "deletedTimestamp": "2016-03-10T12:36:45.132+01:00"
+                },
+                {
+                    "links": [],
+                    "id": "d5f75e2340fc9dac014102187b4e2a68",
+                    "aangepast": "2016-03-10T12:36:45.132+01:00",
+                    "type": "vinkje",
+                    "label": "helpen op evenementen",
+                    "beschrijving": "",
+                    "kanLeidingWijzigen": false,
+                    "verplicht": false,
+                    "kanLidWijzigen": false,
+                    "sort": 0,
+                    "deletedTimestamp": "2016-03-10T12:36:45.132+01:00"
+                },
+                {
+                    "links": [],
+                    "id": "40288144535b694a01535b6adb2c0003",
+                    "aangepast": "2016-03-10T12:36:45.132+01:00",
+                    "type": "lijst",
+                    "label": "Dit is een lijst",
+                    "kanLeidingWijzigen": false,
+                    "verplicht": false,
+                    "kanLidWijzigen": false,
+                    "sort": 0,
+                    "keuzes": [
+                        "Lijstwaarde1",
+                        "Lijstwaarde2"
+                    ],
+                    "deletedTimestamp": "2016-03-10T12:36:45.132+01:00"
+                }
+            ],
+            "waarden": {}
+    },
     "opgericht": "1932-05-30T23:00:00.000Z",
     "beeindigd":"2014/09/01", //optioneel - enkel voor gestopte groepen
     "publiek-inschrijven": false
@@ -566,6 +623,59 @@ Redirect naar nieuwe filter.
 }
 ```
 
+### `/ledenlijst/filter`
+#### `GET`
+
+##### Request
+Geen body nodig.
+
+##### Response
+```javascript
+{
+  "filters": [ //Enkel opgeslage filters, huidige niet dus.
+    {
+      "id": "d5f75e23385c5e6e0139493b8546035e",  //Niet aanwezig voor `huidige` filter als niet opgeslagen
+      "naam": "Mijn filter", //Niet aanwezig voor `huidige` filter als niet opgeslagen
+      "type":"verbond",  // Niet aanwezig voor `huidige` als niet opgeslagen.  Mogelijkheden ['verbond', 'groep', 'lid']
+      "groep": "A3143G", // Enkel aanwezig indien type groep
+      "links":[
+        {    
+          "href": "https://ga.sgv.be/rest/ledenlijst/filter/d5f75e23385c5e6e0139493b8546035e",  //Niet aanwezig voor `huidige` filter als niet opgeslagen
+          "rel": "self",
+          "method": "GET"
+        }, {
+          "rel": "update", //Enkel aanwezig als je dit type filter mag wijzigen
+          "href": "https://ga.sgv.be/rest/ledenlijst/filter/d5f75b320b812440010b8127f95f4db4",
+          "method": "PATCH",
+          "secties": ["id", "naam", "groep" /*als type == "groep"*/, "kolommen", "filter", "sortering"]  //"naam" niet zichtbaar voor "huidige"
+        }
+      ]
+    }
+  ],
+  "links":[
+    {    
+      "href": "https://ga.sgv.be/rest/ledenlijst/filter",
+      "rel": "self",
+      "method": "GET"
+    }, {
+      "rel": "create",
+      "href": "https://ga.sgv.be/rest/ledenlijst/filter",
+      "method": "POST",
+    }, {    
+      "href": "https://ga.sgv.be/rest/ledenlijst/filter/huidige",
+      "rel": "current",
+      "method": "GET"
+    }, 
+  ]
+}
+```
+
+#### `POST`
+##### Request
+Alle secties behalve `links` en `id`
+
+##### Response
+Redirect naar nieuwe filter.
 
 ### `/ledenlijst/filter/{filterid}`
 #### `GET`
@@ -680,61 +790,6 @@ Geen body nodig.
 ##### Response
 HTTP 204 zonder body indien toegelaten.
 
-
-### `/ledenlijst/filter`
-#### `GET`
-
-##### Request
-Geen body nodig.
-
-##### Response
-```javascript
-{
-  "filters": [ //Enkel opgeslage filters, huidige niet dus.
-    {
-      "id": "d5f75e23385c5e6e0139493b8546035e",  //Niet aanwezig voor `huidige` filter als niet opgeslagen
-      "naam": "Mijn filter", //Niet aanwezig voor `huidige` filter als niet opgeslagen
-      "type":"verbond",  // Niet aanwezig voor `huidige` als niet opgeslagen.  Mogelijkheden ['verbond', 'groep', 'lid']
-      "groep": "A3143G", // Enkel aanwezig indien type groep
-      "links":[
-        {    
-          "href": "https://ga.sgv.be/rest/ledenlijst/filter/d5f75e23385c5e6e0139493b8546035e",  //Niet aanwezig voor `huidige` filter als niet opgeslagen
-          "rel": "self",
-          "method": "GET"
-        }, {
-          "rel": "update", //Enkel aanwezig als je dit type filter mag wijzigen
-          "href": "https://ga.sgv.be/rest/ledenlijst/filter/d5f75b320b812440010b8127f95f4db4",
-          "method": "PATCH",
-          "secties": ["id", "naam", "groep" /*als type == "groep"*/, "kolommen", "filter", "sortering"]  //"naam" niet zichtbaar voor "huidige"
-        }
-      ]
-    }
-  ],
-  "links":[
-    {    
-      "href": "https://ga.sgv.be/rest/ledenlijst/filter",
-      "rel": "self",
-      "method": "GET"
-    }, {
-      "rel": "create",
-      "href": "https://ga.sgv.be/rest/ledenlijst/filter",
-      "method": "POST",
-    }, {    
-      "href": "https://ga.sgv.be/rest/ledenlijst/filter/huidige",
-      "rel": "current",
-      "method": "GET"
-    }, 
-  ]
-}
-```
-
-#### `POST`
-##### Request
-Alle secties behalve `links` en `id`
-
-##### Response
-Redirect naar nieuwe filter.
-
 ### `/ledenlijst/kolom-type`
 #### `GET`
 //Een lijst met alle toegelaten kolommen van een filter, exact zoals de kolomtypes zelf weergegeven
@@ -768,6 +823,43 @@ Geen body nodig.
       "method": "GET"
     } 
   ]
+}
+```
+
+### `/zoeken`
+#### `GET`
+//Een lijst van alle leden die in aanmerking komen voor de query.
+
+##### Request
+Uri parameters toegelaten:
+* `query`: string waarop gezocht moet worden
+* `token`: string token warmee de client de request kan identificeren (transparant terug gegeven door de server).
+
+
+##### Response
+```javascript 
+{
+  "token": "foobar",
+  leden: [{
+    "link": {
+      "rel": "self",
+      "href": "https://ga.sgv.be/rest/lid/d5f75b320b812440010b8127f95f4db4",
+      "method": "GET"
+    },
+    "voornaam": "Baden",
+    "achternaam": "Powell",
+    "geboortedatum": "1857-02-22",
+  },
+  {
+    "link": {
+      "rel": "self",
+      "href": "https://ga.sgv.be/rest/lid/d5f75b320b812440010b8127f95f4db4",
+      "method": "GET"
+    },
+    "voornaam": "Olave",
+    "achternaam": "Baden-Powell",
+    "geboortedatum": "1889-02-22",
+  }]
 }
 ```
 

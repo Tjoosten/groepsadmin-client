@@ -12,7 +12,12 @@
     height: 55px; //fixes a box-model bug in FF
     padding: @fluid-grid-gutter-width/2;
     margin: 0 ;
+    margin-bottom: 10px;
   }
+  .btn-group{
+    margin-bottom: 20px;
+  }
+
 }
 
 // Customized button design in filter bar
@@ -61,6 +66,9 @@
 
 // Filter option (criteria)
 // -------------------------
+
+
+
 .filter-option {
   width: 100%;
 
@@ -132,7 +140,7 @@
 
 .checklist {
   max-height: 250px;
-  overflow-y: scroll;
+  overflow-y: auto;
   margin: 4px 0 0 0;
   padding: 0 9px;
   font-size: @font-size-small;
@@ -141,8 +149,12 @@
   border: 1px solid #c0c0c0;
   border-radius: @border-radius-small;
 
+  hr {
+    margin: 0;
+  }
+
   li {
-    
+
   }
 
   label {
@@ -150,6 +162,10 @@
     margin: 0;
     padding: 6px 0;
     font-weight: 400;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 
   input[type="checkbox"] {
